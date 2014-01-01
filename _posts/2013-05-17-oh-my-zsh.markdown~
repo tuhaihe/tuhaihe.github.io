@@ -1,0 +1,83 @@
+---
+layout: post
+title:  "Oh my Zsh!"
+date:   2013-05-17
+---
+
+Zsh 是一款功能强大的交互式 shell，与 Bash 相比，Zsh 下面几点表现令人印象深刻：
+
++ 自动补全
++ 拼写纠错
++ 定制性强
++ 美观的命令提示符（这点吸引力最大）
+
+相信你安装之后，对上面几点会有更加真切的感受！
+
+## 安装
+
+<pre class="prettyprint">
+<code>
+sudo apt-get install zsh #Debian系列
+sudo urpmi zsh #Mageia
+sudo yum install zsh #Fedora
+</code>
+</pre>
+
+查看是否已经安装：运行 *cat /etc/shells* 或 *chsh -l*。如果已经安装，则会看到输出结果中有 */bin/zsh* 一行内容。
+
+## 将 Zsh 设为默认 Shell
+
+Zsh 配置文件为 ~/.zshrc（个人配置）和 /etc/zshrc（系统全局）。
+
+将 Zsh 设为终端模拟器默认使用的 Shell：
+
+<pre class="prettyprint">
+<code>
+$ chsh -s zsh #不必以 root 身份运行，但需要输入管理员密码
+</code>
+</pre>
+
+## 让 Zsh 更漂亮：oh-my-zsh
+
+当首次以 zsh 打开终端模拟器时，会弹出提示：[点击查看](http://upload.wikimedia.org/wikipedia/commons/9/99/Zsh-new-user.png)，忽略即可。下面使用 Oh-my-zsh 利器帮助我们进行定制。
+
+1. 安装 oh-my-zsh(二选一)：
+
+   + 通过 curl 
+
+   <pre class="prettyprint">
+<code>
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+</code>
+</pre>
+
+   + 通过 wget
+
+   <pre class="prettyprint">
+<code>
+wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+</code>
+</pre>
+
+2. 命令提示符主题设置
+
+    <pre class="prettyprint">
+<code>
+$ cd ~/.oh-my-zsh/tools
+$ ./theme_chooser.sh #运行提示符主题选择工具
+</code>
+</pre>    
+
+   运行上述命令后，会有很多漂亮的命令提示符等待你的选择。更多提示符主题截图可查看 oh-my-zsh wiki，我们可以手动修改 ~/.zshrc 文件中 `ZSH_THEME` 一行内容来设置自己喜欢的主题。
+
+3. 插件
+
+oh-my-zsh 提供了 100 多个插件，可根据需求设置，这里不具体介绍。
+
+当使用 Zsh 的时候，才体会到什么是“终极 Shell”。工具，就是等待我们不断去发现！
+
+## 相关链接
+
++ [oh-my-zsh wiki](https://github.com/robbyrussell/oh-my-zsh/wiki)
++ [Archlinux Wiki](https://wiki.archlinux.org/index.php/Zsh_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
++ [OpenSUSE Wiki](http://zh.opensuse.org/SDB:Zsh)
