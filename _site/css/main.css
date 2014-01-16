@@ -1,104 +1,111 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
-
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html, body { height: 100%; }
-
+/*sourced from Jing.py*/
 body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center;
+    font-family: "SimSun", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 16px;
+    margin: 5% 20% 5% 20%;
+    padding: 6% 5% 0% 5%;
+    /*background:transparent url(../images/body_bg.png) repeat fixed;*/
+    -webkit-box-shadow: 0 1px 10px #A8B1B9;
+    -moz-box-shadow: 0 1px 10px #A8B1B9;
+    box-shadow: 0 1px 10px #696969;
+    text-shadow: 0 1px 1px white;
+    width: 50%;
+    line-height: 150%;
+    /*border: 10px solid LightGrey;*/
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
 
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
-
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
+title {
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    letter-spacing: -0.5px;
 }
 
-.posts li {
-  line-height: 1.75em;
+.post-info {
+    color: #999;
+    margin-top: 0px;
+    font-size: 10px;
+    font-family: "Ubuntu Mono", monospace;
 }
 
-.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
+H2 {
+    font-family: "Abel", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    margin-bottom: 4px;
+    padding: 5px;
+    width: 80%;
+    border-bottom: 2px LightGrey solid;
+    line-height: 150%;
+    color: Dark;
 }
 
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
 
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
+H3 {
+    font-family: "Abel", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px LightGrey solid;
+    width: 80%;
+    line-height: 150%;
+    color: Gray;
 }
 
-.header a {
-  font-weight: bold;
-  text-decoration: none;
+
+li {
+    margin-left: 10px;
 }
 
-.title {
-  display: inline-block;
-  margin-bottom: 2em;
+
+blockquote {
+    border-left: 4px lightgrey solid;
+    padding-left: 5px;
+    margin-left: 20px;
 }
 
-.title a {
-  color: #a00;
+pre {
+    font-family: "Ubuntu Mono", monospace;
+    background-color: #002B36;
+    border: 1px solid #05232B;
+    border-radius: 0.4em 0.4em 0.4em 0.4em;
+    color: #93A1A1;
+    font-size: 90%px;
+    line-height: 1.45em;
+    margin-bottom: 2.1em;
+    padding: 0.8em 1em;
+    text-shadow: none;
+    overflow: auto;
 }
 
-.title a:hover {
-  color: #000;
+code {
+    font-style: "Ubuntu Mone", monospace;
+    font-size: 90%;
+    color: #FFFFFF;
 }
 
-.header a.extra {
-  color: #aaa;
-  margin-left: 1em;
+a {
+    color: #A0410D;
+    text-decoration: none;
 }
 
-.header a.extra:hover {
-  color: #000;
+
+a:hover {
+    background-color: LightGrey;
 }
 
-.meta {
-  color: #aaa;
+
+hr {
+    color: LightGrey;
+}
+
+.content {
+    padding: 0% 0% 20% 0%;
 }
 
 .footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
+    text-align: center;
+    font-size: 100%;
+    color: red;
+    border-top: 4px solid #eee;
+    margin-top: 2em;
   overflow: hidden;
 }
 
@@ -121,40 +128,8 @@ a:visited { color: #a0a; }
   border: 0;
 }
 
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
-}
-
-.post ul, .post ol {
-  margin-left: 1.35em;
-}
-
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
-}
-
-.post pre code {
-  border: none;
-}
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
-
-.post pre.terminal code {
-  background-color: #333;
+::selection {
+    background: #9EA1A5;
+    color: #fff;
+    text-shadow: none;
 }
