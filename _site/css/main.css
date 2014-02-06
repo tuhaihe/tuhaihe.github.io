@@ -78,7 +78,7 @@ pre {
 code {
     font-style: "Ubuntu Mone", monospace;
     font-size: 90%;
-    color: #FFFFFF;
+    color: Blue/*#FFFFFF*/;
 }
 
 a {
