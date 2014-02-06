@@ -136,8 +136,9 @@ hr {
 
 @media (max-width: 979px) {
   body {
-  padding: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
+  padding: 100px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 60%;
   }
 }
