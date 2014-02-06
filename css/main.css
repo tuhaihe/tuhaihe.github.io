@@ -133,3 +133,11 @@ hr {
     color: #fff;
     text-shadow: none;
 }
+
+@media (max-width: 979px) {
+  body {
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  }
+}
