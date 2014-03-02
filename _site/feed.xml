@@ -1,0 +1,674 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link></link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <description></description>
+    <language>en-us</language>
+    <pubDate>Sun, 02 Mar 2014 20:41:01 +0800</pubDate>
+    <lastBuildDate>Sun, 02 Mar 2014 20:41:01 +0800</lastBuildDate>
+
+    
+      <item>
+        <title>（不）走后门</title>
+        <link>/2014/03/01/shortcuts-of-the-success.html</link>
+        <pubDate>Sat, 01 Mar 2014 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;p&gt;我现在是上班族的一员，跟大家一样每天“挤公交”。“挤”这个词用的十分恰当。公交车虽然数量挺多，但一拨人走了、一拨人又来。我们必须努力赶上眼下这班车，否则上班就会迟到。挤，挤时间上班、公车上挤空间。&lt;/p&gt;
+
+&lt;p&gt;但我常常发现有时候却是可以“偷懒”的，就是“走后门”。&lt;/p&gt;
+
+&lt;p&gt;走后门，我们一般就是理解为利用不当手段来走捷径、谋不当利益。有的人会利用自身资源“寻租”，导致机会公平性失差。你有资源、但别人没有资源，你在公共竞争平台之外动用个人资源影响公共竞争，“走后门”在这方面来说就是令人痛恨的。机会均等，人人都有出彩的机会，这也是现在公共媒体宣传的一个观点。我觉得倡导这样的思想，是值得肯定的。我们无需借助外力，仅凭实实在在的能力就可以获得成功，这难道不是很好吗？即使你有资源，走后门了，还得欠别人人情。求人办事，也得对所求之人毕恭毕敬，生怕惹人家生气。看别人脸色行事，这应该是每个有骨气的人所不愿接受的。老话还说，“人在屋檐下，不得不低头。”由此看来，暂时隐忍，也是为了让个人更加出彩。&lt;/p&gt;
+
+&lt;p&gt;回到正题。挤公车，当然可以名正言顺“走后门”。前门上车、后门下车，大多数人都是遵守这一规矩的，但规矩有时得要破掉才行。当前门上车的人过多时，售票员会叫司机师傅打开后门，让乘客从后门上车，前门后门一块上车，双线程并发。售票员是不管你有没有座位的，他的作用仅仅是监督你有没有为乘车付费。如果后门允许你走，我们就得观察下与前门相比哪一个入口阻塞情况最低。一般还是选择“走后门”，前面的座位通常是坐满的，后面空座的概率比较大，即使没座，也不会那么拥挤。&lt;/p&gt;
+
+&lt;p&gt;如果后门有下车的人，我们也可以借机上车，这样有座的概率更大。&lt;/p&gt;
+
+&lt;p&gt;某次晚归，要做的公车来到的时候，我仍旧习惯去走后门，但后门没有开。后门没有人下，前门人也不多。我只是习惯去走后门，我喊售票员开门，但没有反应。其他人则按照次序从前门上车。最后，我也只好乖乖的去前门上车。&lt;/p&gt;
+
+&lt;p&gt;此刻，我猛地意识到，原来我习惯了“走后门”，总以为有机可乘。走后门，并不总是可行的；但前门那条路，永远是可行的。&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>(解决)在GNOME 3.8使用网络管理器无法创建有效Wi-Fi热点</title>
+        <link>/2014/02/25/gnome-38-create-wifi-hotspot.html</link>
+        <pubDate>Tue, 25 Feb 2014 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;p&gt;&lt;em&gt;问题描述&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;在GNOME 3.8下使用网络管理器无法创建可连接的Wi-Fi热点，也就是，在网络管理器“Wi-Fi”中可以点击“用作热点”按钮来创建Wi-Fi热点，但是在Android手机中搜索不到，无法建立到热点的网络连接。&lt;/p&gt;
+
+&lt;p&gt;Debian/Ubuntu下的对应版本都会这一问题。在Fedora 20的GNOME 3.10版本下没有这一问题。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;解决方法&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;仍旧按照原先建立Wi-Fi热点的方法创建热点。然后打开网络连接编辑器，点击刚刚建立热点，将其“IPV6”的获取方法设为“忽略”（Ignore）。如下图：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/a8dJ4fc.png&quot; title=&quot;设置IPV6获取方法为“忽略”&quot; align=&quot;center&quot;&gt;&lt;/p&gt;
+
+&lt;h2&gt;参考&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://askubuntu.com/questions/76981/cannot-make-wi-fi-hotspot&quot;&gt;Askubuntu：Cannot make Wi-Fi hotspot&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>我的10个开源观点分享</title>
+        <link>/2014/01/25/thoughts-about-open-source.html</link>
+        <pubDate>Sat, 25 Jan 2014 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;p&gt;对人或物的了解，是一个随信息不断增多而不断深化认识的过程。当我们只窥其一斑时，往往作出误判；当我们见其全貌，信息不对称降低到最小时，才能作出最接近正确解读的判断。下面，我将与大家分享下个人近期对“开源”的一些琐碎的想法，欢迎你在微博（&lt;a href=&quot;http://weibo.com/ibentutu&quot;&gt;@我爱笨兔兔ibentutu&lt;/a&gt;）@ 我。这些思考，部分也是来自社区成员，感谢他们提出的看法促使了我的思考。&lt;/p&gt;
+
+&lt;h2&gt;观点&lt;/h2&gt;
+
+&lt;h3&gt;1. 开源与非开源之间没有万仞的差距。&lt;/h3&gt;
+
+&lt;p&gt;开源，是一种选择，它不应该承载过多的道德荣誉；闭源，是一种选择，它不应该背负过多的道德鄙视。开源的，提供给人们的价值不一定高；闭源的，也可以带给人们超乎想象的价值。就提供的价值来说，在特定领域，它们是不一样的。&lt;/p&gt;
+
+&lt;h3&gt;2. Linux与开源并不是等价关系。&lt;/h3&gt;
+
+&lt;p&gt;之前，我所认为的开源项目，指的就是Linux操作系统（或Linux内核），故在用词上忽视了其他的开源项目。不可否认，Linux是最经典的、最成功的一个开源项目，但它并不是开源世界的全部，虽然很多认识到的事情都是构建在Linux基础之上。&lt;/p&gt;
+
+&lt;p&gt;作为一个普通的Linux桌面用户，往往会忽略企业级的开源项目和社区动态。云计算、大数据……也充满了开源，可以这么说：开源多样，世界远远比我们现在所认识到更加精彩！&lt;/p&gt;
+
+&lt;p&gt;所以，说起开源，就不一定是仅仅局限在Linux上了。&lt;/p&gt;
+
+&lt;h3&gt;3. 开源项目保持长久的要素。&lt;/h3&gt;
+
+&lt;p&gt;一个项目，若要活得长久，必须至少具备下面其一个要素：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;可玩性。也就是能够引起大家的玩劲、折腾劲儿，引起大家的兴趣。从我个人看来，认为它是最重要的一个要素。如果没有兴趣，人们在其中得不到快乐、找不到玩得爽的高潮“G点”，无法“取悦”社区成员，便无法获得长久的社区成长。人们不会强迫自己去接受一个没有趣味的怪物。&lt;/li&gt;
+&lt;li&gt;技术领先。如果没有雄厚的技术实力，其他的比较优势也少的可怜，那么，一个项目无法真正获得应有的地位。&lt;/li&gt;
+&lt;li&gt;商业空间。我们会看到，很多项目的主要维护者有一份“Day Job”，开源项目仅是作为他的业余爱好存在。如果他是专职来做开源项目，要么他是为公司做公司会用到的东西，要么他是为一个拥有巨大商业空间的开源项目来做事情。如果对于长期的开源项目贡献得不到收益（金钱、名誉、尊重），那么他会视为被社区抛弃，自豪地退出。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;一个开源项目最理想状态就是具备上面三个要素，Linux内核项目就是这样。&lt;/p&gt;
+
+&lt;h3&gt;4. 社区存在“蒸发冷却”效应。&lt;/h3&gt;
+
+&lt;p&gt;当一个社区发展壮大，进入门槛降低后，往往那些高端社区成员会离去，寻找一个适合自己的新的小众圈子。他们对此的选择标准往往是：极具专业性、精英汇聚。&lt;/p&gt;
+
+&lt;h3&gt;5. 社区信奉“贡献”，而非“强权”。&lt;/h3&gt;
+
+&lt;p&gt;在社区里面，那些人们信任佩服的成员，他们通常活动积极、专业能力强、能干、协调能力强，真正的实力和高贡献度让他们成为非正式组织中的意见领袖，一呼百应。一旦贡献弱化，后来者就会积极挑战他们的地位，旧有的王者会痛快地以社区的名义交接“王权”，不会发生国家政治中的暴力革命。&lt;/p&gt;
+
+&lt;h3&gt;6. 开源是可以成真的“传销”。&lt;/h3&gt;
+
+&lt;p&gt;开源与传销类似，但它们有一个根本的不同：一个是做的梦可以成真，一个是从开始就做了不存在的梦。将“传销”摆在这里，有些不恰当。但人们一旦对“开源”精神认可后，就很难改变。即使不从事与开源相关的工作，开源社区对个人的影响也不会轻易丢失。举例，之前一个同事加入开源项目团队时，曾被家人认为是误入“传销团伙”，担心不已……&lt;/p&gt;
+
+&lt;h3&gt;7. 评价开源项目的优劣，不能靠代码行数。&lt;/h3&gt;
+
+&lt;p&gt;代码行数或字节数，这个应该是摆在最末、应该忽视的标准。开源项目，看重的是活跃度、参与度、使用率。如果你有百万行的项目代码，但只有你感兴趣，对别人没有使用价值，那它并不算是一个成功的项目。当然，代码达到这个数量级，也不会是一片寂静的境况。我只是强调，不要用项目的代码行数来标明自己的贡献。&lt;/p&gt;
+
+&lt;h3&gt;8. 开源社区“神聚”与“形散”。&lt;/h3&gt;
+
+&lt;p&gt;针对一个问题，可能会有多个解决方案，这也造成了开源社区的“门派”。它们对立，各自面临着残酷的竞争与抵制。最终胜出的一方，要么胜在技术，要么胜在社区。这也应该是开源社区的魅力，大家自娱自乐，但乐在其中。虽然都是开源大旗下的军士，但不尽是“一家人”。&lt;/p&gt;
+
+&lt;h3&gt;9. 请重视“授权协议”。&lt;/h3&gt;
+
+&lt;p&gt;不要仅仅将你的项目托管在Github或其他地方，就算开源了。你要做好文档、社区反馈渠道（Bug、改进建议），修Bug、增加新功能……如果认为开源很简单，往往我们只是做到了简单的代码展示，但没有想过后面的措施。社区运营，是个问题，这也是觉得做好开源很难的原因。&lt;/p&gt;
+
+&lt;p&gt;但请一开始，请注意你的项目要使用的授权协议，是GPL还是BSD、MIT……也请注意别人项目使用的授权协议。如果你对此表现出无所谓，那么真是不应该。你打破了协议的约束而不弥补过错，迟早会成为“众矢之的”。你真的觉得无所谓，或是利用它来炒作，达到不正的目的，结果会适得其反。开源社区就是聚集了一群这样极度苛刻的孩子。&lt;/p&gt;
+
+&lt;h3&gt;10. 在开源社区“混”的，你们都是聪明人。&lt;/h3&gt;
+
+&lt;p&gt;是的，这是事实。:)&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>Google Chrome常用扩展</title>
+        <link>/2014/01/19/google-chrome-extensions-list.html</link>
+        <pubDate>Sun, 19 Jan 2014 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;h2&gt;按键绑定&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/emacsome/lacfhpppojhdlhojhcmcpbbijpcpjfja&quot;&gt;Emacsome&lt;/a&gt;：绑定了Emacs常用快捷键，不过还得自己设置一些；&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/keyboard-fu/cafiohcgicchdfciefpbjjgigbmajndb&quot;&gt;Keyboard-fu&lt;/a&gt;：可以定制常用快捷键；&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/madpldjnldgadicnebalhaedllkngplf&quot;&gt;Moly Keys&lt;/a&gt;：同上。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;娱乐&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.welefen.com/music-chrome-plugin-upgrade-to-2.html&quot;&gt;音乐电台&lt;/a&gt;：支持百度听、豆瓣电台、酷狗电台、虾米电台、酷我电台等十几个电台。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;字典&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/eopjamdnofihpioajgfdikhhbobonhbb&quot;&gt;有道词典&lt;/a&gt;：支持Chrome浏览器划词翻译。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;GTD工具&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/jekhpicinnaamcmadbipjejafgkjdokh&quot;&gt;Wunderlist for Chrome&lt;/a&gt;：GTD工具；&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/ojcflmmmcfpacggndoaaflkmcoblhnbh&quot;&gt;Google 任务离线&lt;/a&gt;：与Google任务同步；&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/hmjkmjkepdijhoojdojkdfohbdgmmhki&quot;&gt;Google Keep&lt;/a&gt;：快速记录你的想法和待做事情；&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/niloccemoadcdkdjlinkgdfekeahmflj&quot;&gt;Pocket&lt;/a&gt;：收藏暂时没空阅读的文章或资料链接，稍后专门阅读；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;其他&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/apt-linker/oljmaangfgmmokjpnojhfblppgeijikp&quot;&gt;Apt-linker&lt;/a&gt;：在Ubuntu和Debian GNU/Linux下使用 Apt://url 来安装软件；&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://adblockplus.org/zh_CN/chrome&quot;&gt;Adblock Plus&lt;/a&gt;：阻击网页广告与弹窗；&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm&quot;&gt;Proxy SwitchySharp&lt;/a&gt;：穿越围墙的阻隔配合（&lt;a href=&quot;https://code.google.com/p/goagent&quot;&gt;Goagent&lt;/a&gt;）；&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/ppelffpjgkifjfgnbaaldcehkpajlmbc&quot;&gt;iReader&lt;/a&gt;：让阅读新闻变得更加简洁、清晰，没有杂物干扰；&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/oidbfegkcongocabknahmjjknpdogado&quot;&gt;goo.gl网址缩短及SNS网站分享&lt;/a&gt;：网址缩短服务为goo.gl；&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/bpphkkgodbfncbcpgopijlfakfgmclao&quot;&gt;DuckDuckGo&lt;/a&gt;：可以在搜索结果中提供DuckDuckGo的搜索结果&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/kglkomofdfeolfjjnmhdpkadaildaogd&quot;&gt;Chremacs&lt;/a&gt;：在Chrome打开支持Emacs快捷键的一个编辑器。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>我的博客历程与最终选择：Github+Jekyll</title>
+        <link>/2014/01/03/use-jekyll-and-github-to-build-blog.html</link>
+        <pubDate>Fri, 03 Jan 2014 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;h1&gt;经历回顾&lt;/h1&gt;
+
+&lt;p&gt;如果有人能够帮助你维护博客平台，你只需要自由酣畅地书写，那绝对是一件幸
+福的事情。自己来维护博客系统，短时间还可以撑得住，时间一长，便有了倦怠。
+这应该就是像博客园、CSDN、51CTO的博客还是一直那么火的原因，它们提供了大
+家自由书写的条件，而无需去考虑如何保证博客能够正常运行、服务器是否挂掉
+这样的事情。&lt;/p&gt;
+
+&lt;p&gt;对我来说，也一直在寻找一个适合自己的内容管理系统，过程也很波折。&lt;/p&gt;
+
+&lt;p&gt;起初，对比了&lt;a href=&quot;http://www.joomla.org&quot;&gt;Joomla&lt;/a&gt;、&lt;a href=&quot;http://drupal.org&quot;&gt;Drupal&lt;/a&gt;和&lt;a href=&quot;http://cn.wordpress.org&quot;&gt;WordPress&lt;/a&gt;这三个CMS系统，WordPress安装
+简单、插件丰富、主题丰富，比较符合一开始的需求，便使用了有2～3年的时间。
+不过，令人苦恼的事情也出现了：数据库越来越大，插件越来越多，还有不断的
+升级，致使WordPress越来越臃肿，数据迁移也不方便。所以，就开始了寻找更加
+轻型CMS的过程。目前，国内WordPress是比较流行的CMS系统，前二者国内用户较
+少。&lt;/p&gt;
+
+&lt;p&gt;同时，因为使用WordPress构建了笨兔兔博客，还接受过至今为止唯一一次对我个
+人的采访，记得当时我主要表达的意思就是：坚持写，真实记录自己。可是，这
+篇采访现在已经很难搜到完整的内容了，不过邮件还在，那也是陈年老账了。现
+在看来，真实是必要的，但还是不要那么真实为妙。有时，无需说出口的话，就
+不必说，即使让他人误解，也最好用淡淡一笑置之；即使看穿别人的心思，也不
+要讲出来，过于直白就打破了朦胧，“人艰不拆”。不过，现在倒是经常有各种生
+活的体悟，若是向别人讲出来，就是“心灵鸡汤”之类的吧。话题有些跑远。&lt;/p&gt;
+
+&lt;p&gt;接着，尝试自己写HTML，无评论系统、无数据库，使用Github进行版本控制。这
+应该解决了数据库和CMS升级的问题。可手写HTML，或借助工具生成HTML文件，毕
+竟也不是长久之计：累。而且，页面也相当简陋。我曾一度将“简陋”与“简约”混
+为一谈，以为“破”就是“朴素”，其实不然。简约，需要有恰当的功能；简陋，则
+缺乏应有的功能。&lt;/p&gt;
+
+&lt;p&gt;后来，又使用Emacs的Org-Mode来写作，然后导出HTML、自动索引。后来，专门写
+了总结，介绍&lt;a href=&quot;http://tuhaihe.com/2013/06/17/use-emacs-orgmode-generate-website.html&quot;&gt;如何使用Emacs Org-Mode制作静态网站&lt;/a&gt;。不过，相比Markdown，
+Org-Mode的语法相对复杂了些。Org-Mode给我印象最深的就是其大纲模式
+（Outline），可以进行段落折叠。现在，如果写作比较长的文章，还是会进入
+Emacs的Org-Mode。在Microsoft Word中，常用“大纲模式”有益身心健康。至于编
+辑器，平常与代码接触少，自然是使用&lt;a href=&quot;http://tuhaihe.com/2013/04/21/gnu-nano.html&quot;&gt;Nano&lt;/a&gt;来完成的。哎，可惜一直对Vi/Vim
+浅尝辄止，近期也有愿望学习下基本操作，毕竟很多时候是没有Nano或Emacs的。&lt;/p&gt;
+
+&lt;p&gt;后来，又在Github上寻得Perl写的一个类似Jekyll的静态站点生成器
+&lt;a href=&quot;https://github.com/tuhaihe/Markablog&quot;&gt;Markablog&lt;/a&gt;。使用Bootstrap搭界面，用脚本来将Markdown格式的文档转换为
+HTML，并自动索引，其实它已经与Jekyll的实现思路一样了。顺便给作者推了一
+个补丁，把生成索引文章顺序错乱的问题给整好了。&lt;/p&gt;
+
+&lt;p&gt;从上面可以看出，大体发展趋势是：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;以Git作为版本控制系统、使用Github进行内容托管；&lt;/li&gt;
+&lt;li&gt;逐渐偏向使用Markdown编辑内容，然后将其转换为HTML；&lt;/li&gt;
+&lt;li&gt;远离数据库&lt;/li&gt;
+&lt;li&gt;静态&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;那么，为什么不选择使用Jekyll来在Github提供的Pages服务上来搭建自己的博客
+呢？这个方法满足了上述三点要求，而且Jekyll定制性也比较高，选择Jekyll已
+经成为必然的选择。下面简单介绍下使用Github+Jekyll搭建个人博客的几个步骤。&lt;/p&gt;
+
+&lt;h2&gt;1. 创建仓库&lt;/h2&gt;
+
+&lt;p&gt;在Github上，新建一个仓库，命名为‵username.github.io‵。将username替换为
+你的Github用户名，如果不使用你的Github用户名，将不会生效。&lt;/p&gt;
+
+&lt;h2&gt;2. 克隆已创建的仓库&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git clone https://github.com/username/username.github.io
+$ git checkout master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;3. “Hello, world!”&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cd username.github.io
+$ echo &amp;quot;你好，世界！&amp;quot; &amp;gt; index.html
+$ git add --all
+$ git commit -m &amp;#39;第一次提交&amp;#39;
+$ git push
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;打开 username.github.io，已经可以看到“你好，世界！”了。我们的第一步已经
+顺利完成，下面开始Jekyll的安装。如果你有独立域名，想要将此域名转到该站
+点，须在该仓库下新建一个名为 CNAME 的文件，里面填写独立域名，如:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tuhaihe.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;同时，还要设置DNS，将原域名的 A 记录指向IP地址：204.232.175.78。这样在
+访问 tuhaihe.com 的时候，就会转到新建的站点。&lt;/p&gt;
+
+&lt;h2&gt;4. 安装Jekyll&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo yum install ruby-devel
+$ sudo yum install gem
+$ gem install jekyll
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;5. 生成基本站点&lt;/h2&gt;
+
+&lt;p&gt;在 tuhaihe.github.io 上一层目录执行下面命令，新生成的基础内容会覆盖我们
+刚才里面的“Hello, world!”：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ jekyll new tuhaihe.github.io 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后，运行&lt;code&gt;jekyll serve&lt;/code&gt;，在浏览器中打开 &lt;code&gt;0.0.0.0:4000&lt;/code&gt;，即可查看效果。
+当然，这只是一个最基本的效果，你如果需要其他更加好看地界面，可以去搜索
+一些Jekyll模板，或者自己折腾。&lt;/p&gt;
+
+&lt;p&gt;OK，基本过程完成！&lt;/p&gt;
+
+&lt;h1&gt;参考资料&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll官网&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>2013读书精选</title>
+        <link>/2014/01/01/my-2013.html</link>
+        <pubDate>Wed, 01 Jan 2014 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;p&gt;下面是2013年所读书籍中感觉不错的，这里为大家作下推荐。读过的书，没有在脑子里面留下印记的，不用苦苦回忆，就让它们消失吧。但凡读过，过去一段时间还能让人记起的，就是那些曾带给你启迪的。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;黑客与画家，Paul Graham&lt;/li&gt;
+&lt;li&gt;1980年代的爱情，土家野夫&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tuhaihe.com/2013/07/03/harley-hahn-linux-guide-1.html&quot;&gt;Unix &amp;amp; Linux大学教程&lt;/a&gt;，Harley hahn&lt;/li&gt;
+&lt;li&gt;UNIX编程艺术，Erics Raymond&lt;/li&gt;
+&lt;li&gt;中国历代政治得失，钱穆&lt;/li&gt;
+&lt;li&gt;乡关何处：故乡·故人·故事，土家野夫&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tuhaihe.com/2013/05/26/simplicity-design.html&quot;&gt;简约至上&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;2013很平凡&lt;/h1&gt;
+
+&lt;p&gt;每一年都很平凡，每一年也都不平凡，总之，让自己过得开心舒服最重要。看着微博上各路人士纷纷出台年终总结，这里也简单总结下自己的2013年，跟下潮流。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;工作变动。我是在2011年12月初入职Linux Deepin团队的，在2013年10月底从深之度离职。自己加入Linux Deepin团队，应该算是比较早的，那时我还没有毕业，整个团队人数也不是很多。经过这近2年的发展，Linux Deepin团队人数增加到了30+，业界影响力也不断增大，很庆幸能够与Linux Deepin团队一同走过这么多岁月。离职之后，开始寻找工作，当然这一过程经历了被拒绝、拒绝别人。最终经由社区热心人士推荐，于2013年11月下旬加入CSDN，任编辑职位。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;新生活。从武汉转战北京，从华中回到北方，其中充满了恐惧、担忧、兴奋、刺激……北京，相比五六年前，变化比不变多很多。来到北京之后，参加了很多开源社区的活动，认识了很多朋友，令人欣慰。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;还有，自己博客较往年写得少了很多、下半年社区参与少了很多……自己在这里原谅自己了。当同事昨天告诉我说那是2013年最后一天的时候，我竟然没有惊讶的表情。哦，大概时间在某些时候是与我没有什么关系的。&lt;/p&gt;
+
+&lt;h1&gt;2014关键词&lt;/h1&gt;
+
+&lt;p&gt;现在想要翻看下2013年初自己许下的愿望、制定的的计划，检查下这一年里自己完成了哪些，但最终还是没有找到。索性我的2014年，也不再定下什么宏愿，只需围绕“读书”、“工作”、“生活”、“开源”这四个关键词展开就好，这样的安排对我来说应该是最好的。&lt;/p&gt;
+
+&lt;p&gt;ps，博客现在不经常更新了，但每日的PV还有2千多，有这么神奇的事情吗？&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>使用Live CD修复Grub引导</title>
+        <link>/2013/11/24/live-cd-fix-grub.html</link>
+        <pubDate>Sun, 24 Nov 2013 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;p&gt;本文以 Ubuntu Live CD 修复 Grub 引导为例，已在 /dev/sda3 安装 Fedora。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;制作 Ubuntu 启动 USB&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;sudo dd &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;ubuntu-13.10-desktop-amd64.iso &lt;span class=&quot;nv&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/dev/sdb &lt;span class=&quot;c&quot;&gt;#/dev/sdb 为 USB 盘符&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;使用启动 USB 进入 Ubuntu 试用环境&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;查看硬盘分区状况，获取 Linux 系统安装分区编号&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint&quot;&gt;
+&lt;code&gt;
+sudo fdisk -l
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;查看输出结果，然后根据文件类型和分区大小来判定 Linux 系统安装在哪块硬盘和安装的分区。我的电脑是在 /dev/sda3 安装了 Fedora。&lt;/p&gt;
+
+&lt;p&gt;或者，打开 &lt;em&gt;Gparted&lt;/em&gt; 图形化工具来查看分区信息也可以。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;挂载 Fedora 安装分区&lt;/p&gt;
+
+&lt;p&gt;已知 Fedora 安装在了 /dev/sda3 上，所以我们可以用下面命令来挂载 Fedora 安装分区。你需要将 /dev/sda3 换成自己的 Linux 安装分区。&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint&quot;&gt;
+&lt;code&gt;
+sudo mount /dev/sda3 /mnt
+&lt;/code&gt;
+&lt;/pre&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;p&gt;挂载其他所需的目录（使用 --bind）&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint&quot;&gt;
+&lt;code&gt;
+sudo mount --bind /dev /mnt/dev
+sudo mount --bind /proc /mnt/proc
+sudo mount --bind /sys /mnt/sys
+&lt;/code&gt;
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Chroot 到硬盘上的 Linux 系统&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint&quot;&gt;
+&lt;code&gt;
+sudo chroot /mnt
+&lt;/code&gt;
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;安装&amp;amp;更新 Grub&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint&quot;&gt;
+&lt;code&gt;
+grub2-install /dev/sda
+grub2-mkconfig -o /boot/grub2/grub.cfg
+&lt;/code&gt;
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Grub 已经修复成功，我们还需要退出 chroot 环境、卸载已经挂载的设备与目录：&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint&quot;&gt;
+&lt;code&gt;
+exit #退出 chroot 环境
+sudo umount /mnt/dev
+sudo umount /mnt/proc
+sudo umount /mnt/sys
+sudo umount /mnt
+&lt;/code&gt;
+&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;重启！&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>Xterm 配置小结</title>
+        <link>/2013/10/16/xterm-discover.html</link>
+        <pubDate>Wed, 16 Oct 2013 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;p&gt;Xterm 是 X 系统标配的终端模拟器，原先对这个丑陋的家伙并没有入眼。用它打开后，显示中文一堆乱码，“不堪入目”。前几天便有好奇心，如何解决它的中文显示乱码问题呢？于是，开始了对 Xterm 的探索之旅。&lt;/p&gt;
+
+&lt;h2&gt;背景：Xresources 文件&lt;/h2&gt;
+
+&lt;p&gt;Xterm 的配置文件就是 Xresources，一般为 ~/.Xresources。Xresources 支持：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;定义终端颜色&lt;/li&gt;
+&lt;li&gt;配置终端首选项&lt;/li&gt;
+&lt;li&gt;字体设置&lt;/li&gt;
+&lt;li&gt;Xcursor 游标主题设置&lt;/li&gt;
+&lt;li&gt;xscreensaver 屏保主题&lt;/li&gt;
+&lt;li&gt;其他 X 应用首选项设置，如 xclok……&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;在使用 ~/.Xresouces 之前，常用 ~/.Xdefaults 这个文件来做设置，不过现在后者已经基本被废弃，大家更常用 ~/.Xresources。所以，Xterm 的配置也要写在 ~/.Xresources 里面。显示管理器登录系统时，会自动读取该文件，以加载配置。当然，我们还需要熟悉下面的两个命令：&lt;/p&gt;
+
+&lt;p&gt;&lt;pre class=&quot;prettyprint&quot;&gt;
+&lt;code&gt;
+xrdb ~/.Xresources #重新加载 .Xresouces 文件，不保留原先配置
+xrdb -merge ~/.Xresources #重新加载 .Xresouces 文件，保留原先配置
+&lt;/code&gt;
+&lt;/pre&gt;&lt;/p&gt;
+
+&lt;h2&gt;Xterm配置&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;UTF-8&lt;/p&gt;
+
+&lt;p&gt;让Xterm将输入的数据解释为UTF-8编码：&lt;pre&gt;xterm*locale:true&lt;/pre&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;修复“Alt”按键&lt;/p&gt;
+
+&lt;p&gt;如果你使用“Alt”作为 Meta 键，需要设置：&lt;pre&gt;xterm*metaSendsEscape:true&lt;/pre&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;滚屏&lt;/p&gt;
+
+&lt;p&gt;可通过鼠标滚轮，或者触摸板边缘上下滚动，或者使用 Shift+PageUp/PageDown 来滚动。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;字体&lt;/p&gt;
+
+&lt;p&gt;我们一开始面对的就是中文乱码，这个特别恼人，所以要在这里解决：&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint&quot;&gt;
+&lt;code&gt;
+xterm*faceName: DejaVu Sans Mono:style=Book:antialias=false
+xterm*faceNameDoublesize: WenQuanYi Micro Hei
+xterm*faceSize: 8
+&lt;/code&gt;
+&lt;/pre&gt;     
+
+&lt;p&gt;上面的“DejaVu Sans Mono”和“WenQuanYi Micro Hei”都可以换成自己喜欢的字体，当然，还可以设置它们是否为粗体（Bold），或者斜体（Italic）等。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;色彩&lt;/p&gt;
+
+&lt;p&gt;Xterm 默认是“白底黑字”，我们可以如下简单的设置：&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint&quot;&gt;
+&lt;code&gt;
+xterm*foreground: rgb:b2/b2/b2
+xterm*background: rgb:08/08/08
+&lt;/code&gt;
+&lt;/pre&gt;     &lt;/li&gt;
+&lt;li&gt;&lt;p&gt;复制与粘贴&lt;/p&gt;
+
+&lt;p&gt;默认情况，Xterm 的选中与粘贴：鼠标高亮选中的文本，就是要复制的文本，在 Xterm 按下“Shift+Insert”或者按鼠标中键就可以直接粘贴。在 X 下，高亮选中的文本被复制到了一个叫做“PRIMARY”的缓冲区，如果继续高亮选中其他文本，则用新高亮选中的文本来代替之前保存的文本。当然，与上面的“PRIMARY”相比，还有一种“CLIPBOARD”：使用“Ctrl+c”或“Ctrl+x”来进行文本复制和剪切，然后“Ctrl+v”进行复制，这就用到了“CLIPBOARD”。&lt;/p&gt;
+
+&lt;p&gt;可以使用下面设置共用这两种方式：&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint&quot;&gt;
+&lt;code&gt;
+XTerm*VT100.translations: #override &lt;Btn1Up&gt;: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;如果我们要启用“Ctrl+v”来复制，可以结合上面设置：&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint&quot;&gt;
+&lt;code&gt;
+xterm*VT100.Translations: #override \
+   &lt;Btn1Up&gt;: select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
+   Ctrl &lt;KeyPress&gt; V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0)
+&lt;/code&gt;
+&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;相关链接&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://wiki.archlinux.org/index.php/Xterm&quot;&gt;Archlinux wiki: Xterm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://wiki.archlinux.org/index.php/X_resources&quot;&gt;Archlinux wiki：Xresources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gist.github.com/tuhaihe/6992626&quot;&gt;我的Xterm配置&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>Fluxbox:窗口管理器</title>
+        <link>/2013/08/27/fluxbox.html</link>
+        <pubDate>Tue, 27 Aug 2013 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;p&gt;&lt;a href=&quot;http://fluxbox.org&quot;&gt;Fluxbox&lt;/a&gt; 是一款 X11 窗口管理器。它具备下面特点：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;轻型，占用资源少&lt;/li&gt;
+&lt;li&gt;快速&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;高度定制&lt;/p&gt;
+
+&lt;p&gt;&lt;pre class=&quot;prettyprint&quot;&gt;
+&lt;code&gt;
+sudo yum install fluxbox #Fedora 用户安装
+sudo apt-get install fluxbox #Debian 用户安装
+&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;配置详情&lt;/h2&gt;
+
+&lt;h3&gt;主题&lt;/h3&gt;
+
+&lt;p&gt;全局主题配置目录：&lt;code&gt;/usr/share/fluxbox/styles&lt;/code&gt;；当前用户主题配置：&lt;code&gt;~/.fluxbox/styles&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;我们只需将主题文件存放在上面之一个目录即可，然后，右键桌面即可在“Fluxbox菜单-用户风格/系统风格”中选择主题。大家可以下载我修改的 Fluxbox 的 Mac OS 主题(&lt;a href=&quot;https://github.com/tuhaihe/fluxbox-macos-theme&quot;&gt;github&lt;/a&gt;)。&lt;/p&gt;
+
+&lt;h3&gt;壁纸&lt;/h3&gt;
+
+&lt;p&gt;我们可以使用 Fluxbox 0.9.15 中新增的 &lt;code&gt;styleOverlay&lt;/code&gt; 来设置壁纸。styleOverlay 可以覆盖其他配置文件中的元素，配置文件：&lt;code&gt;~/.fluxbox/overlay&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;设置壁纸的话，可以将下面内容添加到文件 &lt;code&gt;~/.fluxbox/overlay&lt;/code&gt; 中：&lt;/p&gt;
+
+&lt;p&gt;&lt;pre class=&quot;prettyprint&quot;&gt;
+&lt;code&gt;
+background: aspect
+background.pixmap: ~/wallpaper.jpg #后面填写壁纸文件位置
+&lt;/code&gt;
+&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;其中， aspect（保持宽高比）处还可以替换为 centered（居中）、tiled（平铺）或 random（“随机”，如果设为 random，则必须指定一个图片文件夹，而非单个文件）。&lt;/p&gt;
+
+&lt;h3&gt;菜单&lt;/h3&gt;
+
+&lt;p&gt;右键点击桌面，可以看到可用的菜单选项。如果你的右键还没有生成菜单，可在终端运行命令 &lt;code&gt;fluxbox-generate_menu&lt;/code&gt; 来自动生成菜单。不过，我们手动修改菜单文件 ~/.fluxbox/menu 会更加灵活方便。在这里，你可以突出显示常用应用，隐去你不常用的应用。下面是单个菜单配置语法：&lt;/p&gt;
+
+&lt;p&gt;&lt;pre class=&quot;prettyprint&quot;&gt;
+&lt;code&gt;
+&lt;a href=&quot;%E6%98%BE%E7%A4%BA%E5%90%8D%E7%A7%B0&quot;&gt;exec&lt;/a&gt; {命令}
+&lt;/code&gt;
+&lt;/pre&gt;&lt;/p&gt;
+
+&lt;h3&gt;按键绑定&lt;/h3&gt;
+
+&lt;p&gt;配置文件：~/.fluxbox/keys。比如，默认按下 Alt+F2，则弹出 Fbrun 命令运行对话框。&lt;/p&gt;
+
+&lt;p&gt;关于更多的设置，可参考&lt;a href=&quot;http://fluxbox-wiki.org/index.php?title=Editing_the_init_file&quot;&gt;如何编辑初始文件&lt;/a&gt;。当然，你看了可能并不会知道更多关于 Fluxbox 的内容，这就需要你自己动手去查阅资料。这里仅是为个人和大家提供一个线索。&lt;/p&gt;
+
+&lt;h2&gt;资料链接&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://tenr.de/styles&quot;&gt;Fluxbox Styles&lt;/a&gt;：更多Fluxbox主题&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.gentoo.org/doc/en/fluxbox-config.xml&quot;&gt;Gentoo Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://wiki.archlinux.org/index.php/Fluxbox&quot;&gt;Archwiki Fluxbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://fluxbox-wiki.org&quot;&gt;Fluxbox-wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>定制 Shell 提示符</title>
+        <link>/2013/07/14/bash-shell-prompt.html</link>
+        <pubDate>Sun, 14 Jul 2013 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;h2&gt;Shell 类型标识&lt;/h2&gt;
+
+&lt;p&gt;在打开的终端等待输入命令时，往往显示部分信息，如显示当前日期、符号“&amp;gt;”、“$” 等等，这就是命令提示符。&lt;/p&gt;
+
+&lt;p&gt;我们可能会注意到，在使用不同的用户标识、不同的 Shell 类型时，会出现诸如 $、#、% 等提示符。默认情况下，它们都有标志意义的。通过下表，可以进行了解一下。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;标准 Shell 提示&lt;/em&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;Shell提示&lt;/td&gt;&lt;td&gt;Shell类型&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;$&lt;/td&gt;&lt;td&gt;Bash&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;%&lt;/td&gt;&lt;td&gt;C-shell家族&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;%或&amp;gt;&lt;/td&gt;&lt;td&gt;Tcsh&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;#&lt;/td&gt;&lt;td&gt;根用户，root身份&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/p&gt;
+
+&lt;p&gt;当我们看到这些 Shell 提示符时，应该灵敏地感觉到自己处在什么 Shell 类型之中。尤其是出现“#”时，也应该意识到：我正在以 root 用户标识登陆，我的每一步操作都应该谨慎。&lt;/p&gt;
+
+&lt;h2&gt;定制 Bash Shell 命令提示符&lt;/h2&gt;
+
+&lt;h3&gt;引子&lt;/h3&gt;
+
+&lt;p&gt;在多数 Linux 下，一般提供 Bash 作为默认 Shell。但不同的系统中，你会看到不同的命令提示符，如 Fedora 下：&lt;/p&gt;
+
+&lt;p&gt;&lt;pre class=&quot;prettyprint&quot;&gt;
+&lt;code&gt;
+   [fedora@fedora ~]$ 
+&lt;/code&gt;
+&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;或者，它们默认提供的颜色也不一致。这就是我们要讨论的：如何去定制更加个性化的命令提示符。&lt;/p&gt;
+
+&lt;h3&gt;环境变量 PS1&lt;/h3&gt;
+
+&lt;p&gt;Shell 命令提示符实际上由一个环境变量 PS1 来设置的，上面的例子 PS1 值为：&lt;/p&gt;
+
+&lt;p&gt;&lt;pre class=&quot;prettyprint&quot;&gt;&lt;br&gt;
+&lt;code&gt;
+$ echo $PS1 #显示PS1变量值
+   [\u@\h \W]\$
+&lt;/code&gt;
+&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;在 Shell 提示中，我们可以使用「环境变量」和「特殊码」来定制提示符。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Shell 提示符号中有用的环境变量&lt;/em&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;变量&lt;/td&gt;&lt;td&gt;含义&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;HOME&lt;/td&gt;&lt;td&gt;主文件夹目录&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;HOSTNAME&lt;/td&gt;&lt;td&gt;计算机名称&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;HOSTTYPE&lt;/td&gt;&lt;td&gt;主机类型（CPU架构）&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;LOGNAME&lt;/td&gt;&lt;td&gt;当前用户标识&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;PWD&lt;/td&gt;&lt;td&gt;当前工作目录&lt;/td&gt;&lt;/t&gt;
+&lt;tr&gt;&lt;td&gt;RANDOM&lt;/td&gt;&lt;td&gt;0～32767之间的随机数&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;SECONDS&lt;/td&gt;&lt;td&gt;当前 Shell 运行时间（秒）&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;SHELL&lt;/td&gt;&lt;td&gt;登陆 Shell 的路径名&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;USER&lt;/td&gt;&lt;td&gt;当前用户标识&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;当我们要在命令提示符中使用上述环境变量时，可以直接将其插入在命令提示符中，如：&lt;/p&gt;
+
+&lt;p&gt;&lt;pre class=&quot;prettyprint&quot;&gt;
+&lt;code&gt;
+   export PS1=&amp;quot;$USER &amp;gt;&amp;quot;
+&lt;/code&gt;
+&lt;/pre&gt;&lt;/p&gt;
+
+&lt;p&gt;当然，上面的环境变量有限，提供的信息也没有足够的吸引力。Bash 还允许通过插入一些反斜杠转义的特殊字符来定制命令提示符（&lt;code&gt;man bash&lt;/code&gt;）：&lt;/p&gt;
+
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;\d&lt;/td&gt;&lt;td&gt;日期，格式是 &quot;星期 月份 日&quot; (例如，&quot;Tue May 26&quot;)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\h&lt;/td&gt;&lt;td&gt;主机名，第一个 `.' 之前的部分&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\H&lt;/td&gt;&lt;td&gt;主机名&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\n&lt;/td&gt;&lt;td&gt;换行&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\r&lt;/td&gt;&lt;td&gt;回车&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\t&lt;/td&gt;&lt;td&gt;显示当前时间，采用24小时制 HH:MM:SS 格式&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\T&lt;/td&gt;&lt;td&gt;显示当前时间，采用12小时制的 HH:MM:SS 格式&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\@&lt;/td&gt;&lt;td&gt;显示当前时间，采用12小时制「上午/下午」格式&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\A&lt;/td&gt;&lt;td&gt;显示当前时间，采用24小时制「上午/下午」格式&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\u&lt;/td&gt;&lt;td&gt;当前用户的用户名&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\w&lt;/td&gt;&lt;td&gt;当前工作目录&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\W&lt;/td&gt;&lt;td&gt;当前工作目录的基本部分&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\!&lt;/td&gt;&lt;td&gt;此命令的历史编号&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\#&lt;/td&gt;&lt;td&gt;此命令的命令编号&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\$&lt;/td&gt;&lt;td&gt;如果有效 UID 是 0，就是 #, 其他情况下是 $&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\\&lt;/td&gt;&lt;td&gt;一个反斜杠&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\[&lt;/td&gt;&lt;td&gt;一个不可打印字符序列的开始，可以用于在提示符中嵌入终端控制序列&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;\]&lt;/td&gt;&lt;td&gt;一个不可打印字符序列的结束&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;结合上面提供的可用特殊字符，定制个性化的命令提示符并不困难了。可以结合前面的文章《Oh my zsh！》进行设置。&lt;/p&gt;
+</description>
+      </item>
+    
+
+  </channel>
+</rss>
