@@ -1,24 +1,50 @@
-/*sourced from Jing.py*/
 body {
-    font-family: "SimSun", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: Ubuntu, STFangSong, Helvetica, Arial, Vernada, Tahoma, STXihei, "Microsoft YaHei", "Songti SC", SimSun, Heiti, sans-serif;
     font-size: 16px;
     margin: 5% 20% 5% 20%;
-    padding: 6% 5% 0% 5%;
-    /*background:transparent url(../images/body_bg.png) repeat fixed;*/
-    -webkit-box-shadow: 0 1px 10px #A8B1B9;
-    -moz-box-shadow: 0 1px 10px #A8B1B9;
     box-shadow: 0 1px 10px #696969;
     text-shadow: 0 1px 1px white;
+    padding: 2% 5% 5% 5%;
     width: 50%;
     line-height: 150%;
-    /*border: 10px solid LightGrey;*/
+    border: 1px solid LightGrey;
+}
+
+H1 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, STKaiti, SimSun, serif;
+}
+
+H2 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, STKaiti, SimSun, serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 90%;
+    line-height: 100%;
+    color: Green;
+    border-bottom: 1px dashed;
 }
 
 
-title {
-    text-transform: uppercase;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    letter-spacing: -0.5px;
+H3 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, STKaiti, SimSun, serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed;
+    width: 80%;
+    line-height: 150%;
+    color: Green;
+}
+
+
+H4 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, STKaiti, SimSun, serif;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed;
+    width: 80%;
+    line-height: 150%;
+    color: Green;
 }
 
 .post-info {
@@ -27,28 +53,6 @@ title {
     font-size: 10px;
     font-family: "Ubuntu Mono", monospace;
 }
-
-H2 {
-    font-family: "Abel", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-    margin-bottom: 4px;
-    padding: 5px;
-    width: 80%;
-    border-bottom: 2px LightGrey solid;
-    line-height: 150%;
-    color: Dark;
-}
-
-
-H3 {
-    font-family: "Abel", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    border-bottom: 1px LightGrey solid;
-    width: 80%;
-    line-height: 150%;
-    color: Gray;
-}
-
 
 li {
     margin-left: 10px;
@@ -61,43 +65,51 @@ blockquote {
     margin-left: 20px;
 }
 
+
 pre {
-    font-family: "Ubuntu Mono", monospace;
-    background-color: #002B36;
-    border: 1px solid #05232B;
-    border-radius: 0.4em 0.4em 0.4em 0.4em;
-    color: #93A1A1;
-    font-size: 90%px;
-    line-height: 1.45em;
-    margin-bottom: 2.1em;
-    padding: 0.8em 1em;
-    text-shadow: none;
-    overflow: auto;
+    font-family: "Ubuntu Mono",monospace, Inconsolata, Consolas, "DEJA VU SANS MONO", "DROID SANS MONO", Proggy;
+    font-size: 75%;
+    border: solid 1px lightgrey;
+    background-color: Ivory;
+    padding: 5px;
+    line-height: 130%;
+    margin-left: 10px;
+    width: 95%;
 }
+
 
 code {
-    font-style: "Ubuntu Mone", monospace;
+    font-family: Inconsolata, Consolas, "DEJA VU SANS MONO", "DROID SANS MONO", Proggy, monospace;
     font-size: 90%;
-    color: Blue/*#FFFFFF*/;
 }
 
+
 a {
-    color: #A0410D;
     text-decoration: none;
+    cursor: help;
+    border-bottom: 1px dashed Red;
+    padding: 1px;
+    color: black;
 }
 
 
 a:hover {
-    background-color: LightGrey;
+	background-color: LightGrey;
 }
 
+img {
+    display: block;
+    box-shadow: 0 0 10px #555;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 0 10px #555;
+}
 
 hr {
     color: LightGrey;
-}
-
-.content {
-    padding: 0% 0% 20% 0%;
 }
 
 .footer {
