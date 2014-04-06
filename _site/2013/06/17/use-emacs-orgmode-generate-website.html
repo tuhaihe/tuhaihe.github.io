@@ -72,84 +72,100 @@
 <h2>站点设置</h2>
 
 <ol>
-<li><p>文件目录结构：做好规划</p>
+<li>文件目录结构：做好规划</li>
+</ol>
 
 <p>我们把 .org 格式源文件与导出的 html 文件分开，方便管理。</p>
 
 <p>以本博客为例： .org 文件存放在 ~/blog/www/ 文件夹中，导出的 html 文件存放在 ~/blog/public_html/ 文件夹中。同时， ~/blog/www/ 下还有 css 文件夹（本博客<a href="https://github.com/tuhaihe/blog/tree/master/www/css">css文件</a>，用于存在样式表和脚本。如果你的站点需要图片，则可以新建一个 img 文件夹。</p>
 
-<p>你可以根据站点的情况来设计自己站点的文件目录结构。</p></li>
-<li><p>配置 org-publish-project</p>
+<p>你可以根据站点的情况来设计自己站点的文件目录结构。</p>
+
+<ol>
+<li>配置 org-publish-project</li>
+</ol>
 
 <p>将下面内容添加到 ~/.emacs 中：</p>
 
-<pre class="prettyprint">
+<p><pre class="prettyprint">
 <code>
-(require 'org-publish)
+(require &#39;org-publish)
 (setq org-publish-project-alist
 ;notes组件
-'((
-     "org-notes"
-     :base-directory "~/blog/www/" ;设置存放.org文件位置 
-     :base-extension "org" ;仅处理 .org 格式文件
-     :publishing-directory "~/blog/public_html/" ;导出html文件位置
-     :recursive t
- :publishing-function org-publish-org-to-html
-     :headline-levels 4 ;Just the default for this project.
- :auto-preamble t
-     :auto-sitemap t                  ;自动生成 sitemap.org
-     :sitemap-filename "sitemap.org"  ;默认名称
-     :sitemap-title "Sitemap"         
-     :export-creator-info nil    ;禁止在 postamble 显示"Created by Org"
-     :export-author-info nil     ;禁止在 postamble 显示 "Author: Your Name"
-     :auto-postamble nil         
-     :table-of-contents nil      ;禁止生成文章目录，如果要生成，将 nil 改为 t
-     :section-numbers nil        ;禁止在段落标题前使用数字，如果使用，将 nil 改为 t
-     :html-postamble "<p class=\"postamble\">Update time: %d.</p> " ;自定义 postamble 显示字样
-     :style-include-default nil  ;禁用默认 css 样式,使用自定义css
-    )
+  &#39;((
+         &quot;org-notes&quot;
+         :base-directory &quot;~/blog/www/&quot; ;设置存放.org文件位置 
+         :base-extension &quot;org&quot; ;仅处理 .org 格式文件
+         :publishing-directory &quot;~/blog/public<em>html/&quot; ;导出html文件位置
+         :recursive t
+     :publishing-function org-publish-org-to-html
+         :headline-levels 4 ;Just the default for this project.
+     :auto-preamble t
+         :auto-sitemap t                  ;自动生成 sitemap.org
+         :sitemap-filename &quot;sitemap.org&quot;  ;默认名称
+         :sitemap-title &quot;Sitemap&quot;<br>
+         :export-creator-info nil    ;禁止在 postamble 显示&quot;Created by Org&quot;
+         :export-author-info nil     ;禁止在 postamble 显示 &quot;Author: Your Name&quot;
+         :auto-postamble nil<br>
+         :table-of-contents nil      ;禁止生成文章目录，如果要生成，将 nil 改为 t
+         :section-numbers nil        ;禁止在段落标题前使用数字，如果使用，将 nil 改为 t
+         :html-postamble &quot;<p class=\"postamble\">Update time: %d.</p> &quot; ;自定义 postamble 显示字样
+         :style-include-default nil  ;禁用默认 css 样式,使用自定义css
+        )
 ;;static 组件
-    ("org-static"
-     :base-directory "~/blog/www/"
-     :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
-     :publishing-directory "~/blog/public_html/"
-     :recursive t
-     :publishing-function org-publish-attachment
-     )
+        (&quot;org-static&quot;
+         :base-directory &quot;~/blog/www/&quot;
+         :base-extension &quot;css\|js\|png\|jpg\|gif\|pdf\|mp3\|ogg\|swf&quot;
+         :publishing-directory &quot;~/blog/public</em>html/&quot;
+         :recursive t
+         :publishing-function org-publish-attachment
+         )
 ;;publish 组件
-    ("org" :components ("org-notes" "org-static"))
+        (&quot;org&quot; :components (&quot;org-notes&quot; &quot;org-static&quot;))
 ))
 </code>
-</pre></li>
-<li><p>设置：css 样式&amp;其他信息</p>
+</pre></p>
+
+<ol>
+<li>设置：css 样式&amp;其他信息</li>
+</ol>
 
 <p>我们在第一步已经设置好 CSS 样式文件，它们会控制导出的 HTML 文件外观。除了控制外观之外，还有一些信息也需要我们进行设置。为了方便每次 .org 文件设置，我们在 ~/blog/www/css/ 文件夹下新建一个文件，名为 level-0.orgcss（可自定义），将下面内容复制到该文件中(根据你的个人情况进行修改)：</p>
 
-<pre>
+<pre><code>&lt;pre&gt;
  #+AUTHOR: tuhaihe
  #+EMAIL: 1132321739qq AT gmail DOT com
  #+LINK_HOME: index.html
  #+LINK_UP: index.html
- #+STYLE: <link href="css/org.css" rel="stylesheet" type="text/css">
- #+STYLE: <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
- #+STYLE: <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-</pre></li>
-<li><p>发布</p></li>
+ #+STYLE: &lt;link href=&quot;css/org.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+ #+STYLE: &lt;link href=&quot;css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+ #+STYLE: &lt;link href=&quot;css/bootstrap-responsive.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+</code></pre>
+
+<p></pre></p>
+
+<ol>
+<li>发布</li>
 </ol>
 
 <ul>
-<li><p>首先，在 ~/blog/www/ 文件夹下新建 index.org 文件，并在其开始添加下面头信息：</p>
-
-<pre>
-   #+SETUPFILE: css/level-0.orgcss
-   #+TITLE: 随便写个标题
-
-   Hello, world!
-</pre></li>
-<li><p>导出 HTML 文件</p>
-
-<p>输入 <code>M-x org-publish-project</code>，接着输入<code>org</code> 回车，OK。Org 已经将 index.org 导出为 index.html 文件了。用浏览器打开该文件，查看下效果吧。趁着热情，新建一个 hello.org ，同样先添加上面的文件头信息，然后洋洋洒洒抒发激动心情吧。此时，可以输入 <code>M-x org-publish-current-file</code>，将其导出为 hello.html 文件。</p></li>
+<li>首先，在 ~/blog/www/ 文件夹下新建 index.org 文件，并在其开始添加下面头信息：</li>
 </ul>
+
+<p><pre>
+       #+SETUPFILE: css/level-0.orgcss
+       #+TITLE: 随便写个标题</p>
+
+<pre><code>   Hello, world!
+</code></pre>
+
+<p></pre></p>
+
+<ul>
+<li>导出 HTML 文件</li>
+</ul>
+
+<p>输入 <code>M-x org-publish-project</code>，接着输入<code>org</code> 回车，OK。Org 已经将 index.org 导出为 index.html 文件了。用浏览器打开该文件，查看下效果吧。趁着热情，新建一个 hello.org ，同样先添加上面的文件头信息，然后洋洋洒洒抒发激动心情吧。此时，可以输入 <code>M-x org-publish-current-file</code>，将其导出为 hello.html 文件。</p>
 
 <h2>相关链接</h2>
 

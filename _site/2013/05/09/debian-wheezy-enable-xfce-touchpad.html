@@ -34,37 +34,44 @@
 <h2>解决方法</h2>
 
 <ol>
-<li><p>首先，保证安装了 synaptics 驱动：</p>
+<li>首先，保证安装了 synaptics 驱动：</li>
+</ol>
 
-<pre class="prettyprint">
+<p><pre class="prettyprint">
 <code>
 $ sudo apt-get install xserver-xorg-input-synaptics
 </code>
-</pre></li>
-<li><p>复制 /usr/share/X11/xorg.conf.d 到 /etc/X11：</p>
+</pre></p>
 
-<pre class="prettyprint">
+<ol>
+<li>复制 /usr/share/X11/xorg.conf.d 到 /etc/X11：</li>
+</ol>
+
+<p><pre class="prettyprint">
 <code>
 $ sudo cp -R /usr/share/X11/xorg.conf.d/ /etc/X11
 </code>
-</pre></li>
-<li><p>将原 /etc/X11/xorg.conf.d/50-synaptics.conf 配置文件下面同一部分内容改为：</p>
+</pre></p>
 
-<pre class="prettyprint">
- Section "InputClass"
-        Identifier "touchpad catchall"
-    Driver "synaptics"
-        MatchIsTouchpad "on"
-        MatchDevicePath "/dev/input/event*"
-    Option "TapButton1" "1"
-    Option "TapButton2" "2"
-    Option "TapButton3" "3"
-    Option "VertEdgeScroll" "1"
- EndSection
-</pre>
-
-<p>关于上面文件中 <code>TapButton</code> 的使用，man 手册里面的解释为：</p></li>
+<ol>
+<li>将原 /etc/X11/xorg.conf.d/50-synaptics.conf 配置文件下面同一部分内容改为：</li>
 </ol>
+
+<p><pre class="prettyprint">
+     Section &quot;InputClass&quot;
+            Identifier &quot;touchpad catchall&quot;
+        Driver &quot;synaptics&quot;
+            MatchIsTouchpad &quot;on&quot;
+            MatchDevicePath &quot;/dev/input/event*&quot;
+        Option &quot;TapButton1&quot; &quot;1&quot;
+        Option &quot;TapButton2&quot; &quot;2&quot;
+        Option &quot;TapButton3&quot; &quot;3&quot;
+        Option &quot;VertEdgeScroll&quot; &quot;1&quot;
+     EndSection
+</pre></p>
+
+<pre><code>关于上面文件中 `TapButton` 的使用，man 手册里面的解释为：
+</code></pre>
 
 <blockquote>
 <p>Option &quot;TapButton1&quot; &quot;integer&quot;
