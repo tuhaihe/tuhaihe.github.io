@@ -48,37 +48,31 @@
 <p>解决方法：</p>
 
 <ul>
-<li>添加 extra 软件仓库</li>
-</ul>
+<li><p>添加 extra 软件仓库</p>
 
-<p><pre class="prettyprint">
+<pre class="prettyprint">
 <code>
 $ sudo nano /etc/pacman.conf #打开配置文件
 </code>
-</pre></p>
+</pre>
 
 <p>在该配置文件中添加下面几行内容：</p>
 
-<p><pre>
-   [extra]
-   Include = /etc/pacman.d/mirrorlist</p>
+<pre>
+[extra]
+Include = /etc/pacman.d/mirrorlist
 
-<p>[testing]
-   Include = /etc/pacman.d/mirrorlist
-    </pre></p>
+[testing]
+Include = /etc/pacman.d/mirrorlist
+</pre></li>
+<li><p>安装 filesystem-extra</p>
 
-<ul>
-<li>安装 filesystem-extra</li>
-</ul>
-
-<p><pre class="prettyprint">
+<pre class="prettyprint">
 <code>
 $ sudo pacman -Sy filesystem-extra
 </code>
-</pre>    </p>
-
-<ul>
-<li>重启系统。即可从 extra 软件仓库中安装 GTK 应用程序了。</li>
+</pre>    </li>
+<li><p>重启系统。即可从 extra 软件仓库中安装 GTK 应用程序了。</p></li>
 </ul>
 
 <h3>关于 <a href="http://chakra-project.org/bbs/viewtopic.php?id=10278">extra</a></h3>
@@ -99,10 +93,10 @@ $ sudo pacman -Sy filesystem-extra
 <h2>基本配置</h2>
 
 <ol>
-<li>配置升级源</li>
-</ol>
+<li><p>配置升级源</p>
 
-<p>我们需要将 Chakra 默认升级源改为中国服务器，在终端打开文件 <code>/etc/pacman.d/mirrorlist</code> ，选择位于中国的一个服务器。同时，将文件末尾的美国服务器全部注释掉。</p>
+<p>我们需要将 Chakra 默认升级源改为中国服务器，在终端打开文件 <code>/etc/pacman.d/mirrorlist</code> ，选择位于中国的一个服务器。同时，将文件末尾的美国服务器全部注释掉。</p></li>
+</ol>
 
 <pre>
     # China
@@ -118,24 +112,21 @@ $ sudo pacman -Sy filesystem-extra
 </pre>
 
 <ol>
-<li>安装中文输入法 fcitx</li>
-</ol>
+<li><p>安装中文输入法 fcitx</p>
 
-<p><pre class="prettyprint"> 
+<pre class="prettyprint"> 
 <code>
 $ sudo pacman -S fcitx kcm-fcitx fcitx-rime fcitx-sunpinyin fcitx-googlepinyin
 </code>
-</pre></p>
+</pre></li>
+<li><p>安装 Plasma 部件：显示桌面部件</p>
 
-<ol>
-<li>安装 Plasma 部件：显示桌面部件</li>
-</ol>
-
-<p><pre class="prettyprint"><br>
+<pre class="prettyprint">  
 <code>
 $ sudo pacman -S kdeplasma-addons-applets-showdesktop
 </code>
-</pre></p>
+</pre></li>
+</ol>
 
 <p>在这种纯种 KDE 的环境中，如果你长期习惯于 GNOME 软件使用，你会感到不舒服。不过，真的有人是很讨厌GNOME的……</p>
 

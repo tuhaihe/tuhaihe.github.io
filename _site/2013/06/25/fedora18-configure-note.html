@@ -41,79 +41,64 @@
 <p><a href="https://fedoraproject.org/wiki/Flash">解决方法</a></p>
 
 <ol>
-<li>64&amp;32 位安装方法</li>
-</ol>
+<li><p>64&amp;32 位安装方法</p>
 
 <p><em>X86_64(64 位)</em></p>
 
-<p><pre class="prettyprint">
+<pre class="prettyprint">
 <code>
-  sudo yum install http://linuxdownload.adobe.com/adobe-release/adobe-release-x86_64-1.0-1.noarch.rpm -y
+sudo yum install http://linuxdownload.adobe.com/adobe-release/adobe-release-x86_64-1.0-1.noarch.rpm -y
 </code>
-</pre></p>
+</pre>
 
-<pre><code>*X86(32 位)*
+<p><em>X86(32 位)</em></p>
 
-&lt;pre class=&quot;prettyprint&quot;&gt;
-</code></pre>
-
-<p><code>
-  sudo yum install http://linuxdownload.adobe.com/adobe-release/adobe-release-i386-1.0-1.noarch.rpm -y
+<pre class="prettyprint">
+<code>
+sudo yum install http://linuxdownload.adobe.com/adobe-release/adobe-release-i386-1.0-1.noarch.rpm -y
 </code>
-</pre></p>
-
-<ol>
-<li>导入 Adobe Flash 插件仓库 GPG 密钥并安装
+</pre></li>
+<li><p>导入 Adobe Flash 插件仓库 GPG 密钥并安装
 <pre class="prettyprint">
 <code>
 sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
 sudo yum install flash-plugin -y
 </code>
-</pre></li>
+</pre></p></li>
 </ol>
 
 <h3>多媒体编码解码器</h3>
 
 <ol>
-<li>下载并安装 Free&amp;Nonfree 仓库</li>
-</ol>
+<li><p>下载并安装 Free&amp;Nonfree 仓库</p>
 
 <p>Free 软件仓库为开源软件仓库，Fedora 项目因为其他原因无法搭载；
 Nonfree 仓库主要存放非开源但可重新分发的软件。</p>
 
-<pre><code>&lt;pre class=&quot;prettyprint&quot;&gt;     
-</code></pre>
-
-<p><code>
-sudo &#39;yum localinstall --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm&#39;
-</code>
-</pre></p>
-
-<ol>
-<li>安装多媒体编解码器</li>
-</ol>
-
-<p><pre class="prettyprint">
+<pre class="prettyprint">     
 <code>
-  sudo yum makecach #创建元数据缓存
-  sudo yum install ffmpeg ffmpeg-libs gstreamer-ffmpeg xvidcore libdvdread libdvdnav lsdvd gstreamer-plugins-good gstreamer-plugins-bad gstreamer-plugins-ugly
+sudo 'yum localinstall --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm'
 </code>
-</pre></p>
+</pre></li>
+<li><p>安装多媒体编解码器</p>
 
-<ol>
-<li>添加当前用户到管理组</li>
-</ol>
+<pre class="prettyprint">
+<code>
+sudo yum makecach #创建元数据缓存
+sudo yum install ffmpeg ffmpeg-libs gstreamer-ffmpeg xvidcore libdvdread libdvdnav lsdvd gstreamer-plugins-good gstreamer-plugins-bad gstreamer-plugins-ugly
+</code>
+</pre></li>
+<li><p>添加当前用户到管理组</p>
 
 <p>如果在安装过程中没有将创建的用户添加到管理组，则无法在命令前面使用 sudo。可用下面方法将当前用户添加至管理员组：</p>
 
-<pre><code>&lt;pre class=&quot;prettyprint&quot;&gt;
-</code></pre>
-
-<p><code>
+<pre class="prettyprint">
+<code>
 $ su #切换到 root 用户
-echo &#39;fedora ALL=(ALL) ALL&#39; &gt;&gt; /etc/sudoers #fedora为当前用户名
+echo 'fedora ALL=(ALL) ALL' >> /etc/sudoers #fedora为当前用户名
 </code>
-</pre></p>
+</pre></li>
+</ol>
 
 <h2>YUM 常用选项</h2>
 

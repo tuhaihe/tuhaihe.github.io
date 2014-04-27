@@ -51,75 +51,60 @@ xrdb -merge ~/.Xresources #重新加载 .Xresouces 文件，保留原先配置
 <h2>Xterm配置</h2>
 
 <ol>
-<li>UTF-8</li>
-</ol>
+<li><p>UTF-8</p>
 
-<p>让Xterm将输入的数据解释为UTF-8编码：<pre>xterm*locale:true</pre></p>
+<p>让Xterm将输入的数据解释为UTF-8编码：<pre>xterm*locale:true</pre></p></li>
+<li><p>修复“Alt”按键</p>
 
-<ol>
-<li>修复“Alt”按键</li>
-</ol>
+<p>如果你使用“Alt”作为 Meta 键，需要设置：<pre>xterm*metaSendsEscape:true</pre></p></li>
+<li><p>滚屏</p>
 
-<p>如果你使用“Alt”作为 Meta 键，需要设置：<pre>xterm*metaSendsEscape:true</pre></p>
-
-<ol>
-<li>滚屏</li>
-</ol>
-
-<p>可通过鼠标滚轮，或者触摸板边缘上下滚动，或者使用 Shift+PageUp/PageDown 来滚动。</p>
-
-<ol>
-<li>字体</li>
-</ol>
+<p>可通过鼠标滚轮，或者触摸板边缘上下滚动，或者使用 Shift+PageUp/PageDown 来滚动。</p></li>
+<li><p>字体</p>
 
 <p>我们一开始面对的就是中文乱码，这个特别恼人，所以要在这里解决：</p>
 
-<p><pre class="prettyprint">
+<pre class="prettyprint">
 <code>
-xterm<em>faceName: DejaVu Sans Mono:style=Book:antialias=false
-xterm</em>faceNameDoublesize: WenQuanYi Micro Hei
+xterm*faceName: DejaVu Sans Mono:style=Book:antialias=false
+xterm*faceNameDoublesize: WenQuanYi Micro Hei
 xterm*faceSize: 8
 </code>
-</pre>     </p>
+</pre>     
 
-<p>上面的“DejaVu Sans Mono”和“WenQuanYi Micro Hei”都可以换成自己喜欢的字体，当然，还可以设置它们是否为粗体（Bold），或者斜体（Italic）等。</p>
-
-<ol>
-<li>色彩</li>
-</ol>
+<p>上面的“DejaVu Sans Mono”和“WenQuanYi Micro Hei”都可以换成自己喜欢的字体，当然，还可以设置它们是否为粗体（Bold），或者斜体（Italic）等。</p></li>
+<li><p>色彩</p>
 
 <p>Xterm 默认是“白底黑字”，我们可以如下简单的设置：</p>
 
-<p><pre class="prettyprint">
+<pre class="prettyprint">
 <code>
-xterm<em>foreground: rgb:b2/b2/b2
-xterm</em>background: rgb:08/08/08
+xterm*foreground: rgb:b2/b2/b2
+xterm*background: rgb:08/08/08
 </code>
-</pre>     </p>
-
-<ol>
-<li>复制与粘贴</li>
-</ol>
+</pre>     </li>
+<li><p>复制与粘贴</p>
 
 <p>默认情况，Xterm 的选中与粘贴：鼠标高亮选中的文本，就是要复制的文本，在 Xterm 按下“Shift+Insert”或者按鼠标中键就可以直接粘贴。在 X 下，高亮选中的文本被复制到了一个叫做“PRIMARY”的缓冲区，如果继续高亮选中其他文本，则用新高亮选中的文本来代替之前保存的文本。当然，与上面的“PRIMARY”相比，还有一种“CLIPBOARD”：使用“Ctrl+c”或“Ctrl+x”来进行文本复制和剪切，然后“Ctrl+v”进行复制，这就用到了“CLIPBOARD”。</p>
 
 <p>可以使用下面设置共用这两种方式：</p>
 
-<p><pre class="prettyprint">
+<pre class="prettyprint">
 <code>
 XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
 </code>
-</pre></p>
+</pre>
 
 <p>如果我们要启用“Ctrl+v”来复制，可以结合上面设置：</p>
 
-<p><pre class="prettyprint">
+<pre class="prettyprint">
 <code>
 xterm*VT100.Translations: #override \
-       <Btn1Up>: select-end(CLIPBOARD,PRIMARY,CUT<em>BUFFER0) \n\
-       Ctrl <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT</em>BUFFER0)
+   <Btn1Up>: select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
+   Ctrl <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0)
 </code>
-</pre></p>
+</pre></li>
+</ol>
 
 <h2>相关链接</h2>
 

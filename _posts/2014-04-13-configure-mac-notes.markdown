@@ -1,4 +1,8 @@
-
+---
+layout: post
+title:	"Mac OS X使用记录"
+date:	2014-04-27
+---
 
 ##购前选择
 

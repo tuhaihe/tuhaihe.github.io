@@ -39,93 +39,81 @@ $ sudo apt-get install git # Debian 系列
 <h2>基本操作</h2>
 
 <ol>
-<li>设置用户信息</li>
-</ol>
+<li><p>设置用户信息</p>
 
 <p>Git 配置文件为 ~/.gitconfig 或系统全局设置 /etc/gitconfig。</p>
 
-<p><pre class="prettyprint">
+<pre class="prettyprint">
 <code>
 $ git config --global user.name tuhaihe #该昵称显示在提交时使用
 $ git config –-global user.email zhsan@gmail.com #该邮箱提交时使用
 </code>
-</pre></p>
+</pre>
 
 <p>在上述设置完毕后，可运行下面命令查看自己的设置：</p>
 
-<p><pre class="prettyprint">
+<pre class="prettyprint">
 <code>
 $ git config user.name
 $ git config user.email
 </code>
-</pre></p>
-
-<ol>
-<li>创建仓库(以 Github 为例)</li>
+</pre></li>
+<li><p>创建仓库(以 Github 为例)</p></li>
 </ol>
 
 <ul>
 <li>在 Github 创建账号后，点击 <a href="https://github.com/new">New Repository</a>，填写与本仓库相关的信息，如仓库名称、描述、是否公开。设置完毕后，点击“Create repository”即可创建新仓库。如，建立 test。</li>
-<li>仓库创建完毕，我们开始创建 README 文件，这个是对仓库的详细介绍，或者写些你认为重要的描述。</li>
-</ul>
+<li><p>仓库创建完毕，我们开始创建 README 文件，这个是对仓库的详细介绍，或者写些你认为重要的描述。</p>
 
-<p><pre class="prettyprint">
+<pre class="prettyprint">
 <code>
 $ mkdir ~/test #本地创建 test 文件夹
 $ cd test/
 $ git init #初始化 Git 仓库
 $ touch README #创建README，但该文件尚未添加到版本库
 </code>
-</pre></p>
+</pre></li>
+</ul>
 
 <ol>
-<li>提交文件到版本库</li>
-</ol>
+<li><p>提交文件到版本库</p>
 
-<p><pre class="prettyprint">
+<pre class="prettyprint">
 <code>
 $ git add README #将创建的 README 文件加入到版本库
-$ git commit -m &quot;commit README&quot; #将文件提交到版本库
+$ git commit -m "commit README" #将文件提交到版本库
 $ git log #查看提交日志
 </code>
-</pre></p>
-
-<ol>
-<li>推送到 Github 远程仓库</li>
-</ol>
+</pre></li>
+<li><p>推送到 Github 远程仓库</p>
 
 <p>上述一系列操作，我们只是在本地建立了一个 Git 版本库，我们还需要将其推送到远程服务器(Github 仓库)。完成下述操作后，我们就可以在 Github 页面上看到我们提交的文件了。</p>
 
-<p><pre class="prettyprint">
+<pre class="prettyprint">
 <code>
 $ git remote add origin https://github.com/tuhaihe/test.git
 $ git push origin master #推送到Github test仓库主枝，一般默认为 master
 </code>
-</pre></p>
-
-<ol>
-<li>更多操作</li>
+</pre></li>
+<li><p>更多操作</p></li>
 </ol>
 
 <ul>
-<li>查看修改后的文件与版本库中的文件差异</li>
-</ul>
+<li><p>查看修改后的文件与版本库中的文件差异</p>
 
-<p><pre class="prettyprint">
+<pre class="prettyprint">
 <code>
-   $ git diff
+$ git diff
 </code>
-</pre></p>
+</pre></li>
+<li><p>查看状态</p>
 
-<ul>
-<li>查看状态</li>
-</ul>
-
-<p><pre class="prettyprint">
+<pre class="prettyprint">
 <code>
-   $ git status
+$ git status
 </code>
-</pre></p>
+</pre></li>
+</ul>
 
 <ol>
 <li>需要注意的几个问题</li>

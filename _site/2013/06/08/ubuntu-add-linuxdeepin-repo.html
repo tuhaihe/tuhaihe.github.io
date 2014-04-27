@@ -29,84 +29,74 @@
 <p>下面以 Ubuntu 13.04 安装 Linux Deepin 特色软件为例。</p>
 
 <ol>
-<li>添加 Linux Deepin 升级源</li>
-</ol>
+<li><p>添加 Linux Deepin 升级源</p>
 
-<p><pre class="prettyprint">
+<pre class="prettyprint">
 <code>
 sudo gedit /etc/apt/sources.list #编辑升级列表
 </code>
-</pre></p>
+</pre>
 
 <p>将下面两行内容添加到该文件末尾：</p>
 
-<p><pre class="prettyprint">
+<pre class="prettyprint">
 <code>
 deb http://packages.linuxdeepin.com/deepin raring main non-free universe
 deb-src http://packages.linuxdeepin.com/deepin raring main non-free universe
 </code>
-</pre></p>
-
-<ol>
-<li>添加 Linux Deepin 密钥文件</li>
+</pre></li>
+<li><p>添加 Linux Deepin 密钥文件</p></li>
 </ol>
 
 <ul>
-<li>导入密钥</li>
-</ul>
+<li><p>导入密钥</p>
 
-<p><pre class="prettyprint">
-   <code>
+<pre class="prettyprint">
+<code>
 wget http://packages.linuxdeepin.com/deepin/project/deepin-keyring.gpg
 gpg --import deepin-keyring.gpg
 </code>
-</pre></p>
+</pre></li>
+<li><p>列出密钥</p>
 
-<ul>
-<li>列出密钥</li>
-</ul>
-
-<p><pre class="prettyprint">
+<pre class="prettyprint">
 <code>
 gpg --list-keys
 </code>
-</pre></p>
+</pre>
 
-<pre><code>你会看到输出的结果如下：
+<p>你会看到输出的结果如下：</p>
 
-&lt;pre class=&quot;prettyprint&quot;&gt;
-</code></pre>
-
-<p><code>
-    /home/test/.gnupg/pubring.gpg
-    -----------------------------
-    pub   2048R/209088E7 2010-10-06
-    uid                  Leng Ganghua (Hiweed) <a href="mailto:hiweed@gmail.com">hiweed@gmail.com</a>
-    sub   2048R/4B46F33F 2010-10-06
+<pre class="prettyprint">
+<code>
+/home/test/.gnupg/pubring.gpg
+\-----------------------------
+pub   2048R/209088E7 2010-10-06
+uid                  Leng Ganghua (Hiweed) <hiweed@gmail.com>
+sub   2048R/4B46F33F 2010-10-06
 </code>
-</pre></p>
+</pre>
 
-<pre><code>+ 将密钥导出到 apt-key
-</code></pre>
+<ul>
+<li>将密钥导出到 apt-key</li>
+</ul>
 
-<p><pre class="prettyprint">
-   <code>
+<pre class="prettyprint">
+<code>
 sudo gpg --export --armor 209088E7 | sudo apt-key add -
 </code>
-</pre></p>
+</pre></li>
+</ul>
 
 <ol>
-<li>更新软件源列表</li>
-</ol>
+<li><p>更新软件源列表</p>
 
-<p><pre class="prettyprint">
+<pre class="prettyprint">
 <code>
 sudo apt-get update
 </code>
-</pre></p>
-
-<ol>
-<li>更多</li>
+</pre></li>
+<li><p>更多</p></li>
 </ol>
 
 <ul>
