@@ -6,8 +6,8 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Mon, 28 Apr 2014 23:13:11 +0800</pubDate>
-    <lastBuildDate>Mon, 28 Apr 2014 23:13:11 +0800</lastBuildDate>
+    <pubDate>Tue, 29 Apr 2014 22:38:46 +0800</pubDate>
+    <lastBuildDate>Tue, 29 Apr 2014 22:38:46 +0800</lastBuildDate>
 
     
       <item>
@@ -216,6 +216,7 @@ brew cask install google-chrome #安装Google Chrome浏览器
 &lt;li&gt;Command+Z：撤消刚才的操作&lt;/li&gt;
 &lt;li&gt;Command+O：打开当前文件&lt;/li&gt;
 &lt;li&gt;Command+F：查找&lt;/li&gt;
+&lt;li&gt;Control+触摸板点击：相当于点击鼠标右键&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;窗口操作&lt;/strong&gt;&lt;/p&gt;
