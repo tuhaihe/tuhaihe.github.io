@@ -6,9 +6,41 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Tue, 29 Apr 2014 22:38:46 +0800</pubDate>
-    <lastBuildDate>Tue, 29 Apr 2014 22:38:46 +0800</lastBuildDate>
+    <pubDate>Sun, 08 Jun 2014 20:16:42 +0800</pubDate>
+    <lastBuildDate>Sun, 08 Jun 2014 20:16:42 +0800</lastBuildDate>
 
+    
+      <item>
+        <title>[技巧]在Macbook Retina屏幕下截取常规分辨率截图</title>
+        <link>/2014/06/08/how-to-grab-normal-pixel-screenshot-in-Mabook-Pro-Retina.html</link>
+        <pubDate>Sun, 08 Jun 2014 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;h2&gt;问题描述&lt;/h2&gt;
+
+&lt;p&gt;Macbook Retina屏幕提供了超高分辨率，导致截图相比常规的尺寸过大，在传输截图时不方便。&lt;/p&gt;
+
+&lt;h2&gt;解决方法&lt;/h2&gt;
+
+&lt;p&gt;OS X提供了一个截图命令：screencapture，可以使用该命令进行截图然后对截图进行缩放，以此得到一个常规大小的截图。网络搜索到一个方法，利用OS X的“Automator”工作流管理工具来完成这一目标。下面是配置步骤，实验成功：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;启动 Automator；&lt;/li&gt;
+&lt;li&gt;在弹出的 Automator 对话框中，选择“服务”这一文稿类型，点击“选取”确定；&lt;/li&gt;
+&lt;li&gt;点击左侧面板，选择“实用工具 | 运行 Shell 脚本”；在右侧设置面板中，将“服务收到选定的文本”改为“没有输入”，“位于”仍为“任何应用程序”；&lt;/li&gt;
+&lt;li&gt;设置默认运行 Shell 为 &lt;code&gt;/bin/bash&lt;/code&gt;，然后将&lt;a href=&quot;https://gist.github.com/tuhaihe/0bb13ec1b6a2710b360a&quot;&gt;Shell脚本代码&lt;/a&gt;复制到输入框中保存；&lt;/li&gt;
+&lt;li&gt;点击“运行”进行下测试，可成功运行；&lt;/li&gt;
+&lt;li&gt;打开“系统偏好设置 | 键盘 | 快捷键”，选择“服务-通用”，就可以看到我们刚才创建的服务，为该服务创建一快捷键。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;创建的该服务保存位置是 ~/Library/Services。&lt;/p&gt;
+
+&lt;h2&gt;参考文章&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.lanceli.com/2012/08/downscale-screenshot-at-hight-resolution-on-retina-mackbook-pro.html&quot;&gt;Downscale Screenshot at high resolution on retina macbook pro&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      </item>
     
       <item>
         <title>Mac OS X 不完全使用指南</title>
@@ -737,82 +769,6 @@ $ gem install jekyll
 &lt;p&gt;现在想要翻看下2013年初自己许下的愿望、制定的的计划，检查下这一年里自己完成了哪些，但最终还是没有找到。索性我的2014年，也不再定下什么宏愿，只需围绕“读书”、“工作”、“生活”、“开源”这四个关键词展开就好，这样的安排对我来说应该是最好的。&lt;/p&gt;
 
 &lt;p&gt;ps，博客现在不经常更新了，但每日的PV还有2千多，有这么神奇的事情吗？&lt;/p&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>使用Live CD修复Grub引导</title>
-        <link>/2013/11/24/live-cd-fix-grub.html</link>
-        <pubDate>Sun, 24 Nov 2013 00:00:00 +0800</pubDate>
-        <author></author>
-        <description>&lt;p&gt;本文以 Ubuntu Live CD 修复 Grub 引导为例，已在 /dev/sda3 安装 Fedora。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;制作 Ubuntu 启动 USB&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;sudo dd &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;ubuntu-13.10-desktop-amd64.iso &lt;span class=&quot;nv&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/dev/sdb &lt;span class=&quot;c&quot;&gt;#/dev/sdb 为 USB 盘符&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;使用启动 USB 进入 Ubuntu 试用环境&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;查看硬盘分区状况，获取 Linux 系统安装分区编号&lt;/p&gt;
-
-&lt;pre class=&quot;prettyprint&quot;&gt;
-&lt;code&gt;
-sudo fdisk -l
-&lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;p&gt;查看输出结果，然后根据文件类型和分区大小来判定 Linux 系统安装在哪块硬盘和安装的分区。我的电脑是在 /dev/sda3 安装了 Fedora。&lt;/p&gt;
-
-&lt;p&gt;或者，打开 &lt;em&gt;Gparted&lt;/em&gt; 图形化工具来查看分区信息也可以。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;挂载 Fedora 安装分区&lt;/p&gt;
-
-&lt;p&gt;已知 Fedora 安装在了 /dev/sda3 上，所以我们可以用下面命令来挂载 Fedora 安装分区。你需要将 /dev/sda3 换成自己的 Linux 安装分区。&lt;/p&gt;
-
-&lt;pre class=&quot;prettyprint&quot;&gt;
-&lt;code&gt;
-sudo mount /dev/sda3 /mnt
-&lt;/code&gt;
-&lt;/pre&gt;  &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;挂载其他所需的目录（使用 --bind）&lt;/p&gt;
-
-&lt;pre class=&quot;prettyprint&quot;&gt;
-&lt;code&gt;
-sudo mount --bind /dev /mnt/dev
-sudo mount --bind /proc /mnt/proc
-sudo mount --bind /sys /mnt/sys
-&lt;/code&gt;
-&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Chroot 到硬盘上的 Linux 系统&lt;/p&gt;
-
-&lt;pre class=&quot;prettyprint&quot;&gt;
-&lt;code&gt;
-sudo chroot /mnt
-&lt;/code&gt;
-&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;安装&amp;amp;更新 Grub&lt;/p&gt;
-
-&lt;pre class=&quot;prettyprint&quot;&gt;
-&lt;code&gt;
-grub2-install /dev/sda
-grub2-mkconfig -o /boot/grub2/grub.cfg
-&lt;/code&gt;
-&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Grub 已经修复成功，我们还需要退出 chroot 环境、卸载已经挂载的设备与目录：&lt;/p&gt;
-
-&lt;pre class=&quot;prettyprint&quot;&gt;
-&lt;code&gt;
-exit #退出 chroot 环境
-sudo umount /mnt/dev
-sudo umount /mnt/proc
-sudo umount /mnt/sys
-sudo umount /mnt
-&lt;/code&gt;
-&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;重启！&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
 </description>
       </item>
     
