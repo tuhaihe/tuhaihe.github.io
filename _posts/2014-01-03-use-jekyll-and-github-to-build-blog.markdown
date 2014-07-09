@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "我的博客历程与最终选择：Github+Jekyll"
-date:   2014-01-03
+title:  "【更新】我的博客历程与最终选择：Github+Jekyll"
+date:   2014-07-09
 ---
 
 # 经历回顾
@@ -121,3 +121,10 @@ OK，基本过程完成！
 [如何使用Emacs Org-Mode制作静态网站]: http://tuhaihe.com/2013/06/17/use-emacs-orgmode-generate-website.html
 [Nano]: http://tuhaihe.com/2013/04/21/gnu-nano.html
 [Markablog]: https://github.com/tuhaihe/Markablog
+
+------
+# 更新：增加多说评论框【2014-07-09】
+
+一直没有为这个复活的博客增加评论功能，今天终于终于增加了，使用多说评论来实现，参考教程：[《Jekyll+多说，建立属于你的轻博客》][3]
+
+[3]: http://www.ituring.com.cn/article/114888
