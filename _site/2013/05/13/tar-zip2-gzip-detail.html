@@ -74,34 +74,27 @@
 <h2>使用举例</h2>
 
 <ol>
-<li><p>解开 *.tar
-<pre class="prettyprint">
-<code>
-abc.tar : tar xvf abc.tar
-</code>
-</pre></p></li>
-<li><p>解压缩 *.tar.gz / *.tgz
-<pre class="prettyprint">
-<code>
-abc.tar.gz : tar zxvf abc.tar.gz
-abc.tgz : tar zxvf abc.tar.gz
-</code>
-</pre></p></li>
-<li><p>解压缩 *.tar.bz2 / *.tbz
-<pre class="prettyprint">
-<code>
-abc.tar.bz2 : tar jxvf abc.tar.bz2
-abc.tbz : tar jxvf abc.tbz
-</code>
-</pre></p></li>
-<li><p>解压缩 *.tar.Z
-<pre class="prettyprint">
-<code>
-abc.tar.Z : tar -Zxvf abc.tar.Z 
-</code>
-</pre></p></li>
+<li>解开 *.tar</li>
 </ol>
-
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">abc.tar : tar xvf abc.tar
+</code></pre></div>
+<ol>
+<li>解压缩 *.tar.gz / *.tgz</li>
+</ol>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">abc.tar.gz : tar zxvf abc.tar.gz
+abc.tgz : tar zxvf abc.tar.gz
+</code></pre></div>
+<ol>
+<li>解压缩 *.tar.bz2 / *.tbz</li>
+</ol>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">abc.tar.bz2 : tar jxvf abc.tar.bz2
+abc.tbz : tar jxvf abc.tbz
+</code></pre></div>
+<ol>
+<li>解压缩 *.tar.Z</li>
+</ol>
+<div class="highlight"><pre><code class="sh language-sh" data-lang="sh">abc.tar.Z : tar -Zxvf abc.tar.Z 
+</code></pre></div>
 <h2>zip &amp; rar</h2>
 
 <p>tar 和 gzip\bzip2 往往联合使用，后者常针对单个文件进行解压/压缩，但无“打包”功能。zip：pacakge and comrepss(archive) files.</p>

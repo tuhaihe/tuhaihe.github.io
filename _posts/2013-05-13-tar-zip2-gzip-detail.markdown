@@ -48,32 +48,30 @@ bzip2 支持解压缩的文件格式：
 ## 使用举例
 
 1. 解开 *.tar
-   <pre class="prettyprint">
-<code>
+
+```sh
 abc.tar : tar xvf abc.tar
-</code>
-</pre>
+```
 
 2. 解压缩 *.tar.gz / *.tgz
-   <pre class="prettyprint">
-<code>
+
+```sh
 abc.tar.gz : tar zxvf abc.tar.gz
 abc.tgz : tar zxvf abc.tar.gz
-</code>
-</pre>
+```
+
 3. 解压缩 *.tar.bz2 / *.tbz
-   <pre class="prettyprint">
-<code>
+
+```sh
 abc.tar.bz2 : tar jxvf abc.tar.bz2
 abc.tbz : tar jxvf abc.tbz
-</code>
-</pre>
+```
+
 4. 解压缩 *.tar.Z
-   <pre class="prettyprint">
-<code>
+
+```sh
 abc.tar.Z : tar -Zxvf abc.tar.Z 
-</code>
-</pre>
+```
 
 ## zip & rar
 

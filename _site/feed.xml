@@ -6,12 +6,53 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Wed, 09 Jul 2014 18:35:50 +0800</pubDate>
-    <lastBuildDate>Wed, 09 Jul 2014 18:35:50 +0800</lastBuildDate>
+    <pubDate>Sun, 03 Aug 2014 13:43:25 +0800</pubDate>
+    <lastBuildDate>Sun, 03 Aug 2014 13:43:25 +0800</lastBuildDate>
 
     
       <item>
-        <title>我的博客历程与最终选择：Github+Jekyll</title>
+        <title>阅读清单：《大教堂与市集》等</title>
+        <link>/2014/08/02/books-reading.html</link>
+        <pubDate>Sat, 02 Aug 2014 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;p&gt;正值炎炎夏日，炎热让思考和读书变得困难了许多，书也读的少了很多。一两天不读，日子过得心安理得，若是三四天不读，就感到惶恐，心里有愧疚感，感觉像是自己在犯过错，正巧被自己抓了现行，必须得拿起书本翻阅几页，即使做作业样子也让自己宽慰不少。“夏有凉风冬有雪”，这样的情境是最贴切的渴望。“业宜精钻，书宜杂读”，这句话到底是不做假的。&lt;/p&gt;
+
+&lt;p&gt;最近看的书也挺杂，有些看起来让自己感觉很舒服，但有些没有多大意思。不管好玩与否，下面贴下近期书单，可为参考。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;《极客与团队》：&lt;/li&gt;
+&lt;li&gt;《黑客：计算机革命的英雄》&lt;/li&gt;
+&lt;li&gt;《大教堂与市集》&lt;/li&gt;
+&lt;li&gt;《穆斯林的葬礼》&lt;/li&gt;
+&lt;li&gt;《法官手记》&lt;/li&gt;
+&lt;li&gt;《乱时候，穷时候》&lt;/li&gt;
+&lt;li&gt;《平如美棠：我俩的故事》&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;一、《极客与团队》&lt;/p&gt;
+
+&lt;p&gt;作为团队成员，如何更好的与团队其他成员更好地协同工作，是工作中不得不思考的一个点。这本书主要是写给程序员，或者说软件工程师看的。在与工程师打交道的过程中，有时候也确实感受到写代码的人在处理人际方面的事情上过于“直”，往往会让人感到不舒服，这个也是它们可爱之处。如果把这些存在的缺点，当成一个噱头，而不去改进，想必对个人职业发展是会有影响的，以此为乐说的过去，但也影响了别人对你综合能力的判断。&lt;/p&gt;
+
+&lt;p&gt;从开源社区走出来的人，该如何和团队协作，这也是前段时间想了很久的问题。拿我自己来说，开始参加工作（Deepin）时，公司要求上下班打卡，但开始我是强烈抵制这一行为的，连同周报也不交。为什么会这样做？从我自己来看，原因有：我是自觉的，不应该用外部工具来约束我的自觉性。开源社区也是这样的：我参与，是因为我喜欢，我喜欢就会自觉主动地做好自身应该做的，无需额外监督，全凭自身道德约束，大家也相信自己的约束力。有了这样的思想，碰到外部监督手段，不发生冲突是不可能的。其实，这里也引出一个话题：开源社区成员如何培养职业素养，说白了就是如何让自己得到“驯化”。职场上的礼仪、规则，是需要学习的，不是单凭自觉所能解决的问题，因为大多数人并不能做到自觉。我亲眼目睹过自己和别人因这样的理念不能很好地协调，而发生过“流血事件”。&lt;/p&gt;
+
+&lt;p&gt;本书给出了三个原则：HRT，即Humble、Respect、Trust，谦逊、尊重、信任。&lt;/p&gt;
+
+&lt;p&gt;二、《黑客：计算机革命的英雄》&lt;/p&gt;
+
+&lt;p&gt;Eric S. Raymond在《大教堂与市集》中提到：只有其他黑客说你为黑客时，你才成为真正的黑客，自己给自己贴上黑客的标签无效。MIT是黑客文化的滥觞，给这群追求极致的人以舞台，其后将黑客文化传播到世界各地。比尔·盖茨、乔布斯也在这书本之内，也被归为黑客，但人们常说他们是黑客精神的背叛者。好好读这本书，从源头直至“最后一名黑客”Richard Stallman，可以感受到他们是如何引领计算机发展浪潮的。自己面对这群改变历史的人，难免生出悲叹之情。&lt;/p&gt;
+
+&lt;p&gt;三、其他&lt;/p&gt;
+
+&lt;p&gt;《乱时候，穷时候》作者是一位老奶奶，“六十学写字，七十来写书”，书中故事读来，阵阵悲苦、欢笑夹杂其中，这就是一个时代下小人物的烙印。《平如美棠：我俩的故事》，也是这样一段朴素的故事，两个人在大时代中走过的坎坎坷坷。两本书的故事都是平静道来，但这平静之下是经历过苦难之后的坦然和淡定。&lt;/p&gt;
+
+&lt;p&gt;《法官手记》，一个老法官对过往30年经典案例的梳理：人心若走偏，一切都玩完。&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>【更新】我的博客历程与最终选择：Github+Jekyll</title>
         <link>/2014/07/09/use-jekyll-and-github-to-build-blog.html</link>
         <pubDate>Wed, 09 Jul 2014 00:00:00 +0800</pubDate>
         <author></author>
@@ -122,7 +163,7 @@ $ gem install jekyll
 
 &lt;hr&gt;
 
-&lt;h1&gt;更新：增加多说评论框&lt;/h1&gt;
+&lt;h1&gt;更新：增加多说评论框【2014-07-09】&lt;/h1&gt;
 
 &lt;p&gt;一直没有为这个复活的博客增加评论功能，今天终于终于增加了，使用多说评论来实现，参考教程：&lt;a href=&quot;http://www.ituring.com.cn/article/114888&quot;&gt;《Jekyll+多说，建立属于你的轻博客》&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -739,42 +780,6 @@ Tips，留他微博的原因就是他的粉丝太少了……&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/bpphkkgodbfncbcpgopijlfakfgmclao&quot;&gt;DuckDuckGo&lt;/a&gt;：可以在搜索结果中提供DuckDuckGo的搜索结果&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/kglkomofdfeolfjjnmhdpkadaildaogd&quot;&gt;Chremacs&lt;/a&gt;：在Chrome打开支持Emacs快捷键的一个编辑器。&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>2013读书精选</title>
-        <link>/2014/01/01/my-2013.html</link>
-        <pubDate>Wed, 01 Jan 2014 00:00:00 +0800</pubDate>
-        <author></author>
-        <description>&lt;p&gt;下面是2013年所读书籍中感觉不错的，这里为大家作下推荐。读过的书，没有在脑子里面留下印记的，不用苦苦回忆，就让它们消失吧。但凡读过，过去一段时间还能让人记起的，就是那些曾带给你启迪的。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;黑客与画家，Paul Graham&lt;/li&gt;
-&lt;li&gt;1980年代的爱情，土家野夫&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://tuhaihe.com/2013/07/03/harley-hahn-linux-guide-1.html&quot;&gt;Unix &amp;amp; Linux大学教程&lt;/a&gt;，Harley hahn&lt;/li&gt;
-&lt;li&gt;UNIX编程艺术，Erics Raymond&lt;/li&gt;
-&lt;li&gt;中国历代政治得失，钱穆&lt;/li&gt;
-&lt;li&gt;乡关何处：故乡·故人·故事，土家野夫&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://tuhaihe.com/2013/05/26/simplicity-design.html&quot;&gt;简约至上&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1&gt;2013很平凡&lt;/h1&gt;
-
-&lt;p&gt;每一年都很平凡，每一年也都不平凡，总之，让自己过得开心舒服最重要。看着微博上各路人士纷纷出台年终总结，这里也简单总结下自己的2013年，跟下潮流。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;工作变动。我是在2011年12月初入职Linux Deepin团队的，在2013年10月底从深之度离职。自己加入Linux Deepin团队，应该算是比较早的，那时我还没有毕业，整个团队人数也不是很多。经过这近2年的发展，Linux Deepin团队人数增加到了30+，业界影响力也不断增大，很庆幸能够与Linux Deepin团队一同走过这么多岁月。离职之后，开始寻找工作，当然这一过程经历了被拒绝、拒绝别人。最终经由社区热心人士推荐，于2013年11月下旬加入CSDN，任编辑职位。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;新生活。从武汉转战北京，从华中回到北方，其中充满了恐惧、担忧、兴奋、刺激……北京，相比五六年前，变化比不变多很多。来到北京之后，参加了很多开源社区的活动，认识了很多朋友，令人欣慰。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;还有，自己博客较往年写得少了很多、下半年社区参与少了很多……自己在这里原谅自己了。当同事昨天告诉我说那是2013年最后一天的时候，我竟然没有惊讶的表情。哦，大概时间在某些时候是与我没有什么关系的。&lt;/p&gt;
-
-&lt;h1&gt;2014关键词&lt;/h1&gt;
-
-&lt;p&gt;现在想要翻看下2013年初自己许下的愿望、制定的的计划，检查下这一年里自己完成了哪些，但最终还是没有找到。索性我的2014年，也不再定下什么宏愿，只需围绕“读书”、“工作”、“生活”、“开源”这四个关键词展开就好，这样的安排对我来说应该是最好的。&lt;/p&gt;
-
-&lt;p&gt;ps，博客现在不经常更新了，但每日的PV还有2千多，有这么神奇的事情吗？&lt;/p&gt;
 </description>
       </item>
     

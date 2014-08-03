@@ -14,23 +14,19 @@ date:   2013-05-09
 
 1. 首先，保证安装了 synaptics 驱动：
 
-   <pre class="prettyprint">
-<code>
+```sh
 $ sudo apt-get install xserver-xorg-input-synaptics
-</code>
-</pre>
+```
 
 2. 复制 /usr/share/X11/xorg.conf.d 到 /etc/X11：
 
-   <pre class="prettyprint">
-<code>
+```sh
 $ sudo cp -R /usr/share/X11/xorg.conf.d/ /etc/X11
-</code>
-</pre>
+```
 
 3. 将原 /etc/X11/xorg.conf.d/50-synaptics.conf 配置文件下面同一部分内容改为：
 
-   <pre class="prettyprint">
+```sh
      Section "InputClass"
             Identifier "touchpad catchall"
 	    Driver "synaptics"
@@ -41,8 +37,7 @@ $ sudo cp -R /usr/share/X11/xorg.conf.d/ /etc/X11
 	    Option "TapButton3" "3"
 	    Option "VertEdgeScroll" "1"
      EndSection
-</pre>
-
+```
     关于上面文件中 `TapButton` 的使用，man 手册里面的解释为：
 
 > Option "TapButton1" "integer"
@@ -79,10 +74,8 @@ synaptics 是触摸板的 Xorg 输入驱动。即使触摸板也可以由 evdev 
 
 我们可以使用下面命令在当前会话实现上述设置：
 
-<pre class="prettyprint">
-<code>
+```sh
 $ synclient TapButton1=1
 $ synclient TapButton2=2
 $ synclient TapButton3=3
-</code>
-</pre>
+```
