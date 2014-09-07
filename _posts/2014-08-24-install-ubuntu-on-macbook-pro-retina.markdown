@@ -1,0 +1,109 @@
+---
+layout: post
+title:	"【教程】在Macbook上安装Mac、Ubuntu双系统"
+date:	2014-09-07
+---
+
+说起来，如果不想太折腾，通过虚拟机来体验Linux是最好不过的了。虽然很多人认为在Macbook上安装Linux没有必要，觉得糟蹋，Mac OS提供了优雅的界面，同时不乏命令行，但两者给人的感觉很有差异。你在Linux下可以做的事情更多，可以定制的内容更多，想做什么什么就可以做什么，只要你能做到，但Mac OS却给用户划了框框，手脚不得伸展。平日无暇折腾，框住手脚无所谓；但有时间想要去做更多的事情时，显然Mac OS并不是最好的平台。折腾，是生命的本质属性，它也是Linux的自然属性。
+
+本文是在Macbook上安装Ubuntu的折腾记录。在安装之前也看过很多教程，但在真正实践过程中，掉入坑中多次。希望本文介绍的方法能够为大家提供参考，时隔2周补记，有所错误疏漏之处，欢迎指出。
+
+---
+
+** 背景 **
+
++ Macbook配置：Macbook Pro（Retina屏幕）
++ Ubuntu系统：[Ubuntu 14.04.1][7]
+
+----
+
+**1. 制作Ubuntu启动U盘**
+
+这块也是个问题，之前就是简单使用命令 dd 一下就觉得轻松搞定，但是无法从U盘启动。原来，Ubuntu官网原本就给出了[标准步骤][1]，在这里详细介绍下：
+
++ 将Ubuntu .iso镜像转为 .img 镜像格式：
+
+    hdiutil convert -format UDRW -o <生成的.img镜像保存位置>  <Ubuntu .iso文件位置>
+
+*提示*：OS X在转换过程中，会自动在新生成的文件中添加`.img`后缀
+
++ 查看当前设备列表：`diskutil list`，确认USB设备标识，类似 /dev/disk*
+
++ 卸载要写入Ubuntu镜像的USB设备：`diskutil unmountDisk /dev/disk*`，/dev/disk* 替换为USB设备标识
+
++ 使用DD命令写入镜像： `sudo dd if=<Ubuntu .img镜像文件位置> of=/dev/rdiskN bs=1m`
+
+*注意*：在Mac OS下制作启动USB，使用rdisk代替disk，速度会快近20倍，二者区别可参见[《Mac OS: Why is /dev/rdisk 20 times faster than /dev/disk》][2]；使用 m 而不是 M；这里的 dd 命令是BSD dd，而不是GNU dd，所以在命令参数的使用上存在细微差别。
+
++ 镜像写入完毕后，弹出（不是`拔出`）USB设备：diskutil eject /dev/disk*
+
++ 重启Mac电脑：狂按“Alt/Option”键，就从刚制作好的U盘启动即可。
+
+如果按住“Alt/Option”键还是无法从U盘启动，可以试试安装rEFIt。[rEFIt][3]是适用于Mac的一款启动引导菜单工具，安装后可以轻松引导多操作系统。开机时，按住键盘上“Alt Option”键，就可以看到多启动选项了。
+
+**2. 系统安装**
+
+安装这一块，不必多说。提示一下，安装到哪个硬盘/分区，是需要提前进行划分的，我是将Ubuntu安装到了一块外置SSD上，如果你是安装到Mac内置硬盘空间上，还需要使用“磁盘工具”对硬盘进行分区。
+
+**3. 修复引导**
+
+安装完毕后，别着急重启！
+
+还需要修复下引导：
+
+	sudo apt-get install efibootmgr #安装EFI引导工具
+	sudo efibootmgr #运行工具，查看显示启动顺序
+	
+运行上面的命令，可能显示下面的结果：
+
+	……
+	BootOrder: 0080
+	Boot0000*: ubuntu
+	Boot0080*: Mac OS X
+	……
+	
+从上面结果看，默认启动的是Mac OS系统，这样开机我们就无法进入Ubuntu系统。可以运行下面命令，设置从GNU GRUB引导菜单进入系统：
+
+	sudo efibootmgr -o 0,80
+
+重启进入Ubuntu系统，我们还需要编辑下GRUB，否则开机则无法进入Mac系统，纠结的就在这里，设置好了这个，另外一个就废掉了：
+
+	sudo nano /etc/grub.d/40_custom
+	
+输入下面内容：
+
+	menuentry "Mac OS X" {
+    exit
+    }
+   
+保存上面修改，然后运行：`sudo update-grub`即可。
+
+**4. 其他设置**
+
++ 解决无法网络无法使用的问题
+
+你进入Ubuntu系统，还会发现无线网络竟然无法使用？没错，是真的不能用！我在重启进入Ubuntu才发现这一问题的，有线网络转接头当时不在身边，无线不能用，就利用之前制作好的Ubuntu启动U盘，进入试用环境，然后根据[《使用Live CD修复Grub引导》][4]里面的的方法，Chroot到安装好的Ubuntu系统，执行下面命令：
+
+	sudo apt-get install bcmwl-kernel-source
+
+不过这里还有一个问题，就是软件更新源的问题：安装好的Ubuntu系统更新源已经设置为从镜像站点获取，此时联络不上网络，就无法运行上面的命令，可复制试用环境中的`/etc/apt/sources.list`替代已安装的Ubuntu系统，覆盖原文件，记得将之前的文件做好备份。LiveCD中的软件更新源默认是从LiveCD中读取，这样就可以顺利执行上面的命令。关于此问题，可查看[《AskUbuntu讨论》][5]
+
++ Retina屏幕显示问题
+
+默认进入的Ubuntu系统图标显示太小，这是Retina屏幕造成的。我解决这一问题的方法很粗暴：调小屏幕显示分辨率。
+
+其实，针对各个桌面环境适配HiDPI显示屏问题，推荐阅读[《设置Linux桌面环境，实现HiDPI显示支持》][6]。
+
+
+**参考**
+
++ [《如何在MacBook Pro Retina上安装Linux》][8]
+
+[1]: http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx
+[2]: http://superuser.com/questions/631592/mac-osx-why-is-dev-rdisk-20-times-faster-than-dev-disk
+[3]: http://refit.sourceforge.net
+[4]: http://tuhaihe.com/2013/11/24/live-cd-fix-grub.html
+[5]: http://askubuntu.com/questions/55868/installing-broadcom-wireless-drivers
+[6]: http://code.csdn.net/news/2821438
+[7]: http://www.ubuntu.com/download/desktop/
+[8]: http://linux.cn/article-3245-1.html
