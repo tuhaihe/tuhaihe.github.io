@@ -6,9 +6,144 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Sun, 03 Aug 2014 13:43:25 +0800</pubDate>
-    <lastBuildDate>Sun, 03 Aug 2014 13:43:25 +0800</lastBuildDate>
+    <pubDate>Sun, 30 Nov 2014 12:53:43 +0800</pubDate>
+    <lastBuildDate>Sun, 30 Nov 2014 12:53:43 +0800</lastBuildDate>
 
+    
+      <item>
+        <title>阅读清单：容忍比自由更重要</title>
+        <link>/2014/11/30/books-reading.html</link>
+        <pubDate>Sun, 30 Nov 2014 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;h2&gt;人懒，是心懒了&lt;/h2&gt;
+
+&lt;p&gt;近来读书的时间很少，仔细想来，多数还是花在了刷微博、玩游戏还有一些没有任何目的的动作上，不如之前勤奋了、懒了，是和天气有关吗？还是和平日工作较忙，赶回家就觉得累了，随便浪费时间，就觉得安稳的度过一天了？&lt;/p&gt;
+
+&lt;p&gt;总之，不思进取的想法多了一些，不求上进的想法多了一些，这些都是没有出息的行为，我决心在近期改变这种状态。目前，我已经慢慢在改变。赖在床上、贪睡，这些形式慢慢在改变。认真想下，贪睡的半小时，其实什么用都没有的，就是一个字，懒！&lt;/p&gt;
+
+&lt;p&gt;归根结底，心懒了。让自己陷落在一种安逸的状态，不忍、不想打破，这怎么能行呢？&lt;/p&gt;
+
+&lt;h2&gt;阅读清单&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;《容忍比自由更重要》，胡适&lt;/li&gt;
+&lt;li&gt;《Linux Shell脚本攻略》&lt;/li&gt;
+&lt;li&gt;《论语》（进度：17%）&lt;/li&gt;
+&lt;li&gt;《操作系统之哲学原理》（35%）&lt;/li&gt;
+&lt;li&gt;《UNIX编程艺术》（1%）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;自己在整理的时候，都觉得这样的读书进展对自己真的是无法交代的。不是无书可读，而是无心读书!&lt;/p&gt;
+
+&lt;p&gt;这里，我重点推荐胡适先生的《容忍比自由更重要》，建议各位都认真读下。&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>【教程】在Macbook上安装Mac、Ubuntu双系统</title>
+        <link>/2014/09/07/install-ubuntu-on-macbook-pro-retina.html</link>
+        <pubDate>Sun, 07 Sep 2014 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;p&gt;说起来，如果不想太折腾，通过虚拟机来体验Linux是最好不过的了。虽然很多人认为在Macbook上安装Linux没有必要，觉得糟蹋，Mac OS提供了优雅的界面，同时不乏命令行，但两者给人的感觉很有差异。你在Linux下可以做的事情更多，可以定制的内容更多，想做什么什么就可以做什么，只要你能做到，但Mac OS却给用户划了框框，手脚不得伸展。平日无暇折腾，框住手脚无所谓；但有时间想要去做更多的事情时，显然Mac OS并不是最好的平台。折腾，是生命的本质属性，它也是Linux的自然属性。&lt;/p&gt;
+
+&lt;p&gt;本文是在Macbook上安装Ubuntu的折腾记录。在安装之前也看过很多教程，但在真正实践过程中，掉入坑中多次。希望本文介绍的方法能够为大家提供参考，时隔2周补记，有所错误疏漏之处，欢迎指出。&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;** 背景 **&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Macbook配置：Macbook Pro（Retina屏幕）&lt;/li&gt;
+&lt;li&gt;Ubuntu系统：&lt;a href=&quot;http://www.ubuntu.com/download/desktop/&quot;&gt;Ubuntu 14.04.1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;strong&gt;1. 制作Ubuntu启动U盘&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;这块也是个问题，之前就是简单使用命令 dd 一下就觉得轻松搞定，但是无法从U盘启动。原来，Ubuntu官网原本就给出了&lt;a href=&quot;http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx&quot;&gt;标准步骤&lt;/a&gt;，在这里详细介绍下：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;将Ubuntu .iso镜像转为 .img 镜像格式：&lt;/p&gt;
+
+&lt;p&gt;hdiutil convert -format UDRW -o &lt;生成的.img镜像保存位置&gt;  &lt;Ubuntu .iso文件位置&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;提示&lt;/em&gt;：OS X在转换过程中，会自动在新生成的文件中添加&lt;code&gt;.img&lt;/code&gt;后缀&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;查看当前设备列表：&lt;code&gt;diskutil list&lt;/code&gt;，确认USB设备标识，类似 /dev/disk*&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;卸载要写入Ubuntu镜像的USB设备：&lt;code&gt;diskutil unmountDisk /dev/disk*&lt;/code&gt;，/dev/disk* 替换为USB设备标识&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用DD命令写入镜像： &lt;code&gt;sudo dd if=&amp;lt;Ubuntu .img镜像文件位置&amp;gt; of=/dev/rdiskN bs=1m&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;注意&lt;/em&gt;：在Mac OS下制作启动USB，使用rdisk代替disk，速度会快近20倍，二者区别可参见&lt;a href=&quot;http://superuser.com/questions/631592/mac-osx-why-is-dev-rdisk-20-times-faster-than-dev-disk&quot;&gt;《Mac OS: Why is /dev/rdisk 20 times faster than /dev/disk》&lt;/a&gt;；使用 m 而不是 M；这里的 dd 命令是BSD dd，而不是GNU dd，所以在命令参数的使用上存在细微差别。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;镜像写入完毕后，弹出（不是&lt;code&gt;拔出&lt;/code&gt;）USB设备：diskutil eject /dev/disk*&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;重启Mac电脑：狂按“Alt/Option”键，就从刚制作好的U盘启动即可。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;如果按住“Alt/Option”键还是无法从U盘启动，可以试试安装rEFIt。&lt;a href=&quot;http://refit.sourceforge.net&quot;&gt;rEFIt&lt;/a&gt;是适用于Mac的一款启动引导菜单工具，安装后可以轻松引导多操作系统。开机时，按住键盘上“Alt Option”键，就可以看到多启动选项了。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. 系统安装&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;安装这一块，不必多说。提示一下，安装到哪个硬盘/分区，是需要提前进行划分的，我是将Ubuntu安装到了一块外置SSD上，如果你是安装到Mac内置硬盘空间上，还需要使用“磁盘工具”对硬盘进行分区。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. 修复引导&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;安装完毕后，别着急重启！&lt;/p&gt;
+
+&lt;p&gt;还需要修复下引导：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;sudo apt-get install efibootmgr #安装EFI引导工具
+sudo efibootmgr #运行工具，查看显示启动顺序
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;运行上面的命令，可能显示下面的结果：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;……
+BootOrder: 0080
+Boot0000*: ubuntu
+Boot0080*: Mac OS X
+……
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;从上面结果看，默认启动的是Mac OS系统，这样开机我们就无法进入Ubuntu系统。可以运行下面命令，设置从GNU GRUB引导菜单进入系统：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;sudo efibootmgr -o 0,80
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;重启进入Ubuntu系统，我们还需要编辑下GRUB，否则开机则无法进入Mac系统，纠结的就在这里，设置好了这个，另外一个就废掉了：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;sudo nano /etc/grub.d/40_custom
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;输入下面内容：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;menuentry &amp;quot;Mac OS X&amp;quot; {
+exit
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;保存上面修改，然后运行：&lt;code&gt;sudo update-grub&lt;/code&gt;即可。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4. 其他设置&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;解决无法网络无法使用的问题&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;你进入Ubuntu系统，还会发现无线网络竟然无法使用？没错，是真的不能用！我在重启进入Ubuntu才发现这一问题的，有线网络转接头当时不在身边，无线不能用，就利用之前制作好的Ubuntu启动U盘，进入试用环境，然后根据&lt;a href=&quot;http://tuhaihe.com/2013/11/24/live-cd-fix-grub.html&quot;&gt;《使用Live CD修复Grub引导》&lt;/a&gt;里面的的方法，Chroot到安装好的Ubuntu系统，执行下面命令：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;text language-text&quot; data-lang=&quot;text&quot;&gt;sudo apt-get install bcmwl-kernel-source
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;不过这里还有一个问题，就是软件更新源的问题：安装好的Ubuntu系统更新源已经设置为从镜像站点获取，此时联络不上网络，就无法运行上面的命令，可复制试用环境中的&lt;code&gt;/etc/apt/sources.list&lt;/code&gt;替代已安装的Ubuntu系统，覆盖原文件，记得将之前的文件做好备份。LiveCD中的软件更新源默认是从LiveCD中读取，这样就可以顺利执行上面的命令。关于此问题，可查看&lt;a href=&quot;http://askubuntu.com/questions/55868/installing-broadcom-wireless-drivers&quot;&gt;《AskUbuntu讨论》&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Retina屏幕显示问题&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;默认进入的Ubuntu系统图标显示太小，这是Retina屏幕造成的。我解决这一问题的方法很粗暴：调小屏幕显示分辨率。&lt;/p&gt;
+
+&lt;p&gt;其实，针对各个桌面环境适配HiDPI显示屏问题，推荐阅读&lt;a href=&quot;http://code.csdn.net/news/2821438&quot;&gt;《设置Linux桌面环境，实现HiDPI显示支持》&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;参考&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://linux.cn/article-3245-1.html&quot;&gt;《如何在MacBook Pro Retina上安装Linux》&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      </item>
     
       <item>
         <title>阅读清单：《大教堂与市集》等</title>
@@ -666,119 +801,6 @@ Tips，留他微博的原因就是他的粉丝太少了……&lt;/li&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://askubuntu.com/questions/76981/cannot-make-wi-fi-hotspot&quot;&gt;Askubuntu：Cannot make Wi-Fi hotspot&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>我的10个开源观点分享</title>
-        <link>/2014/01/25/thoughts-about-open-source.html</link>
-        <pubDate>Sat, 25 Jan 2014 00:00:00 +0800</pubDate>
-        <author></author>
-        <description>&lt;p&gt;对人或物的了解，是一个随信息不断增多而不断深化认识的过程。当我们只窥其一斑时，往往作出误判；当我们见其全貌，信息不对称降低到最小时，才能作出最接近正确解读的判断。下面，我将与大家分享下个人近期对“开源”的一些琐碎的想法，欢迎你在微博（&lt;a href=&quot;http://weibo.com/ibentutu&quot;&gt;@我爱笨兔兔ibentutu&lt;/a&gt;）@ 我。这些思考，部分也是来自社区成员，感谢他们提出的看法促使了我的思考。&lt;/p&gt;
-
-&lt;h2&gt;观点&lt;/h2&gt;
-
-&lt;h3&gt;1. 开源与非开源之间没有万仞的差距。&lt;/h3&gt;
-
-&lt;p&gt;开源，是一种选择，它不应该承载过多的道德荣誉；闭源，是一种选择，它不应该背负过多的道德鄙视。开源的，提供给人们的价值不一定高；闭源的，也可以带给人们超乎想象的价值。就提供的价值来说，在特定领域，它们是不一样的。&lt;/p&gt;
-
-&lt;h3&gt;2. Linux与开源并不是等价关系。&lt;/h3&gt;
-
-&lt;p&gt;之前，我所认为的开源项目，指的就是Linux操作系统（或Linux内核），故在用词上忽视了其他的开源项目。不可否认，Linux是最经典的、最成功的一个开源项目，但它并不是开源世界的全部，虽然很多认识到的事情都是构建在Linux基础之上。&lt;/p&gt;
-
-&lt;p&gt;作为一个普通的Linux桌面用户，往往会忽略企业级的开源项目和社区动态。云计算、大数据……也充满了开源，可以这么说：开源多样，世界远远比我们现在所认识到更加精彩！&lt;/p&gt;
-
-&lt;p&gt;所以，说起开源，就不一定是仅仅局限在Linux上了。&lt;/p&gt;
-
-&lt;h3&gt;3. 开源项目保持长久的要素。&lt;/h3&gt;
-
-&lt;p&gt;一个项目，若要活得长久，必须至少具备下面其一个要素：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;可玩性。也就是能够引起大家的玩劲、折腾劲儿，引起大家的兴趣。从我个人看来，认为它是最重要的一个要素。如果没有兴趣，人们在其中得不到快乐、找不到玩得爽的高潮“G点”，无法“取悦”社区成员，便无法获得长久的社区成长。人们不会强迫自己去接受一个没有趣味的怪物。&lt;/li&gt;
-&lt;li&gt;技术领先。如果没有雄厚的技术实力，其他的比较优势也少的可怜，那么，一个项目无法真正获得应有的地位。&lt;/li&gt;
-&lt;li&gt;商业空间。我们会看到，很多项目的主要维护者有一份“Day Job”，开源项目仅是作为他的业余爱好存在。如果他是专职来做开源项目，要么他是为公司做公司会用到的东西，要么他是为一个拥有巨大商业空间的开源项目来做事情。如果对于长期的开源项目贡献得不到收益（金钱、名誉、尊重），那么他会视为被社区抛弃，自豪地退出。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;一个开源项目最理想状态就是具备上面三个要素，Linux内核项目就是这样。&lt;/p&gt;
-
-&lt;h3&gt;4. 社区存在“蒸发冷却”效应。&lt;/h3&gt;
-
-&lt;p&gt;当一个社区发展壮大，进入门槛降低后，往往那些高端社区成员会离去，寻找一个适合自己的新的小众圈子。他们对此的选择标准往往是：极具专业性、精英汇聚。&lt;/p&gt;
-
-&lt;h3&gt;5. 社区信奉“贡献”，而非“强权”。&lt;/h3&gt;
-
-&lt;p&gt;在社区里面，那些人们信任佩服的成员，他们通常活动积极、专业能力强、能干、协调能力强，真正的实力和高贡献度让他们成为非正式组织中的意见领袖，一呼百应。一旦贡献弱化，后来者就会积极挑战他们的地位，旧有的王者会痛快地以社区的名义交接“王权”，不会发生国家政治中的暴力革命。&lt;/p&gt;
-
-&lt;h3&gt;6. 开源是可以成真的“传销”。&lt;/h3&gt;
-
-&lt;p&gt;开源与传销类似，但它们有一个根本的不同：一个是做的梦可以成真，一个是从开始就做了不存在的梦。将“传销”摆在这里，有些不恰当。但人们一旦对“开源”精神认可后，就很难改变。即使不从事与开源相关的工作，开源社区对个人的影响也不会轻易丢失。举例，之前一个同事加入开源项目团队时，曾被家人认为是误入“传销团伙”，担心不已……&lt;/p&gt;
-
-&lt;h3&gt;7. 评价开源项目的优劣，不能靠代码行数。&lt;/h3&gt;
-
-&lt;p&gt;代码行数或字节数，这个应该是摆在最末、应该忽视的标准。开源项目，看重的是活跃度、参与度、使用率。如果你有百万行的项目代码，但只有你感兴趣，对别人没有使用价值，那它并不算是一个成功的项目。当然，代码达到这个数量级，也不会是一片寂静的境况。我只是强调，不要用项目的代码行数来标明自己的贡献。&lt;/p&gt;
-
-&lt;h3&gt;8. 开源社区“神聚”与“形散”。&lt;/h3&gt;
-
-&lt;p&gt;针对一个问题，可能会有多个解决方案，这也造成了开源社区的“门派”。它们对立，各自面临着残酷的竞争与抵制。最终胜出的一方，要么胜在技术，要么胜在社区。这也应该是开源社区的魅力，大家自娱自乐，但乐在其中。虽然都是开源大旗下的军士，但不尽是“一家人”。&lt;/p&gt;
-
-&lt;h3&gt;9. 请重视“授权协议”。&lt;/h3&gt;
-
-&lt;p&gt;不要仅仅将你的项目托管在Github或其他地方，就算开源了。你要做好文档、社区反馈渠道（Bug、改进建议），修Bug、增加新功能……如果认为开源很简单，往往我们只是做到了简单的代码展示，但没有想过后面的措施。社区运营，是个问题，这也是觉得做好开源很难的原因。&lt;/p&gt;
-
-&lt;p&gt;但请一开始，请注意你的项目要使用的授权协议，是GPL还是BSD、MIT……也请注意别人项目使用的授权协议。如果你对此表现出无所谓，那么真是不应该。你打破了协议的约束而不弥补过错，迟早会成为“众矢之的”。你真的觉得无所谓，或是利用它来炒作，达到不正的目的，结果会适得其反。开源社区就是聚集了一群这样极度苛刻的孩子。&lt;/p&gt;
-
-&lt;h3&gt;10. 在开源社区“混”的，你们都是聪明人。&lt;/h3&gt;
-
-&lt;p&gt;是的，这是事实。:)&lt;/p&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>Google Chrome常用扩展</title>
-        <link>/2014/01/19/google-chrome-extensions-list.html</link>
-        <pubDate>Sun, 19 Jan 2014 00:00:00 +0800</pubDate>
-        <author></author>
-        <description>&lt;h2&gt;按键绑定&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/emacsome/lacfhpppojhdlhojhcmcpbbijpcpjfja&quot;&gt;Emacsome&lt;/a&gt;：绑定了Emacs常用快捷键，不过还得自己设置一些；&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/keyboard-fu/cafiohcgicchdfciefpbjjgigbmajndb&quot;&gt;Keyboard-fu&lt;/a&gt;：可以定制常用快捷键；&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/madpldjnldgadicnebalhaedllkngplf&quot;&gt;Moly Keys&lt;/a&gt;：同上。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;娱乐&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.welefen.com/music-chrome-plugin-upgrade-to-2.html&quot;&gt;音乐电台&lt;/a&gt;：支持百度听、豆瓣电台、酷狗电台、虾米电台、酷我电台等十几个电台。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;字典&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/eopjamdnofihpioajgfdikhhbobonhbb&quot;&gt;有道词典&lt;/a&gt;：支持Chrome浏览器划词翻译。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;GTD工具&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/jekhpicinnaamcmadbipjejafgkjdokh&quot;&gt;Wunderlist for Chrome&lt;/a&gt;：GTD工具；&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/ojcflmmmcfpacggndoaaflkmcoblhnbh&quot;&gt;Google 任务离线&lt;/a&gt;：与Google任务同步；&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/hmjkmjkepdijhoojdojkdfohbdgmmhki&quot;&gt;Google Keep&lt;/a&gt;：快速记录你的想法和待做事情；&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/niloccemoadcdkdjlinkgdfekeahmflj&quot;&gt;Pocket&lt;/a&gt;：收藏暂时没空阅读的文章或资料链接，稍后专门阅读；&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;其他&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/apt-linker/oljmaangfgmmokjpnojhfblppgeijikp&quot;&gt;Apt-linker&lt;/a&gt;：在Ubuntu和Debian GNU/Linux下使用 Apt://url 来安装软件；&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://adblockplus.org/zh_CN/chrome&quot;&gt;Adblock Plus&lt;/a&gt;：阻击网页广告与弹窗；&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm&quot;&gt;Proxy SwitchySharp&lt;/a&gt;：穿越围墙的阻隔配合（&lt;a href=&quot;https://code.google.com/p/goagent&quot;&gt;Goagent&lt;/a&gt;）；&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/ppelffpjgkifjfgnbaaldcehkpajlmbc&quot;&gt;iReader&lt;/a&gt;：让阅读新闻变得更加简洁、清晰，没有杂物干扰；&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/oidbfegkcongocabknahmjjknpdogado&quot;&gt;goo.gl网址缩短及SNS网站分享&lt;/a&gt;：网址缩短服务为goo.gl；&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/bpphkkgodbfncbcpgopijlfakfgmclao&quot;&gt;DuckDuckGo&lt;/a&gt;：可以在搜索结果中提供DuckDuckGo的搜索结果&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/kglkomofdfeolfjjnmhdpkadaildaogd&quot;&gt;Chremacs&lt;/a&gt;：在Chrome打开支持Emacs快捷键的一个编辑器。&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       </item>
