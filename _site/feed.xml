@@ -6,9 +6,40 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Sun, 30 Nov 2014 12:53:43 +0800</pubDate>
-    <lastBuildDate>Sun, 30 Nov 2014 12:53:43 +0800</lastBuildDate>
+    <pubDate>Sun, 24 May 2015 14:10:24 +0800</pubDate>
+    <lastBuildDate>Sun, 24 May 2015 14:10:24 +0800</lastBuildDate>
 
+    
+      <item>
+        <title>『嗨！小伙子』</title>
+        <link>/2015/05/24/hi-yongman.html</link>
+        <pubDate>Sun, 24 May 2015 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;p&gt;太阳下山很久了，天黑了。我也刚吃完重庆小面走在回去的路上。这条路，一天走两遍，早与晚，或是周末走很多遍。高大的杨树、低垂的柳树把昏黄的路灯遮蔽成碎碎的，我快速走着，就像日常的步伐，不迟疑。&lt;/p&gt;
+
+&lt;p&gt;那一刻，我还低头想着白天的事情。而且，上周末刚剪了短头发。她竟然对着我快速走过的身影坚持喊：嗨，小伙子。她站住不动，喊了好几遍，我眼角的余光都记得。&lt;/p&gt;
+
+&lt;p&gt;我也停住，回头，想她或是问路，或是专门对年轻人下手搞骗局要零钱。这类事情并不稀奇，只要在人满的路上走，经常会遇到。看的多了，对那些伪装的事情自然多一些防备。她站在影里，往我这里走了几步进到跟前。她很矮，和乡村中年妇女一样有着胖胖的身材。我冷冷地看她要做什么。&lt;/p&gt;
+
+&lt;p&gt;她操着南方口音说，你还住在这啊？&lt;/p&gt;
+
+&lt;p&gt;我略低头仔细一看，激动起来，啊！多么熟悉，这个影里站着的人！&lt;/p&gt;
+
+&lt;p&gt;她是之前租住小区面馆里的阿姨。她们一家来自浙江绍兴，夫妻俩开着一家杭州小吃面馆，儿子在老家上职业高中，今年应该是二年级了。之前阿姨经常问我一些关于毕业以后工作的事情，也替自己的儿子打算。她总说，学习不好，只能让孩子找个将就的工作干着。她有时也自豪得提到她儿子有喜欢的事情就是修车，只要有愿意做的事情也很满足了。&lt;/p&gt;
+
+&lt;p&gt;我当时几乎每天晚上回去都要去面馆吃饭，或是牛肉面，或是小笼包，或者热干面配上蛋汤。和老板聊聊他们的老家，聊聊他们在北京的见闻。他们会问我工作，有些赞赏与羡慕。&lt;/p&gt;
+
+&lt;p&gt;当时的生活，比现在简单快乐。每次吃饭时也会碰上送快递的大哥，听他们聊快递的无奈与乐趣，有说有笑。人们总能把累化成笑语，在生活的行当做着。第二天，他们继续爬楼梯走街道，收快递送快递，我也继续会在每天的晚饭时碰到他们。&lt;/p&gt;
+
+&lt;p&gt;面对眼前的她，我亲切的喊了一声老板。她问我答，问我的工作还好吧，问我住在哪儿，问我谈女朋友了没有。我倒是没有问她什么。之后，我和她快乐分别，她向东去，我向西来。&lt;/p&gt;
+
+&lt;p&gt;当时内心确实有些激动，回到住处，平静下来，我便有了疑问：我走那么急，路也不那么明亮，而且不见近一年的时间，她是如何认出我的呢？&lt;/p&gt;
+
+&lt;p&gt;当然，我不会去向她求证原因了。只是我想，在一个夜晚归来的时侯，我可以再去一次面馆，进门就喊：&lt;/p&gt;
+
+&lt;p&gt;『老板！一碗牛肉面，加一个鸡蛋。』&lt;/p&gt;
+</description>
+      </item>
     
       <item>
         <title>阅读清单：容忍比自由更重要</title>
@@ -777,31 +808,6 @@ Tips，留他微博的原因就是他的粉丝太少了……&lt;/li&gt;
 &lt;p&gt;某次晚归，要做的公车来到的时候，我仍旧习惯去走后门，但后门没有开。后门没有人下，前门人也不多。我只是习惯去走后门，我喊售票员开门，但没有反应。其他人则按照次序从前门上车。最后，我也只好乖乖的去前门上车。&lt;/p&gt;
 
 &lt;p&gt;此刻，我猛地意识到，原来我习惯了“走后门”，总以为有机可乘。走后门，并不总是可行的；但前门那条路，永远是可行的。&lt;/p&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>(解决)在GNOME 3.8使用网络管理器无法创建有效Wi-Fi热点</title>
-        <link>/2014/02/25/gnome-38-create-wifi-hotspot.html</link>
-        <pubDate>Tue, 25 Feb 2014 00:00:00 +0800</pubDate>
-        <author></author>
-        <description>&lt;p&gt;&lt;em&gt;问题描述&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;在GNOME 3.8下使用网络管理器无法创建可连接的Wi-Fi热点，也就是，在网络管理器“Wi-Fi”中可以点击“用作热点”按钮来创建Wi-Fi热点，但是在Android手机中搜索不到，无法建立到热点的网络连接。&lt;/p&gt;
-
-&lt;p&gt;Debian/Ubuntu下的对应版本都会这一问题。在Fedora 20的GNOME 3.10版本下没有这一问题。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;解决方法&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;仍旧按照原先建立Wi-Fi热点的方法创建热点。然后打开网络连接编辑器，点击刚刚建立热点，将其“IPV6”的获取方法设为“忽略”（Ignore）。如下图：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/a8dJ4fc.png&quot; title=&quot;设置IPV6获取方法为“忽略”&quot; align=&quot;center&quot;&gt;&lt;/p&gt;
-
-&lt;h2&gt;参考&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://askubuntu.com/questions/76981/cannot-make-wi-fi-hotspot&quot;&gt;Askubuntu：Cannot make Wi-Fi hotspot&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
       </item>
     
